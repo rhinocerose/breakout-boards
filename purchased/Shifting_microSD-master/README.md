@@ -1,7 +1,8 @@
 SparkFun Shifting µSD
 ===================================
 ![SparkFun Shifting µSD
-](Assets/sd-card-image.jpg)
+](Assets/sd-card-image-front.jpg)
+![](Assets/sd-card-image-back.jpg)
 
 [*SparkFun Shifting µSD
  (DEV-13743)*](https://www.sparkfun.com/products/13743)
