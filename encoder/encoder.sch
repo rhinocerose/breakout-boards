@@ -9177,9 +9177,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="83.82" y="-10.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
-<wire x1="116.84" y1="0" x2="127" y2="0" width="0.1524" layer="91"/>
-<label x="127" y="0" size="1.778" layer="95" xref="yes"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="116.84" y1="-2.54" x2="127" y2="-2.54" width="0.1524" layer="91"/>
+<label x="127" y="-2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="B" class="0">
@@ -9189,9 +9189,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="83.82" y="-35.56" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="116.84" y1="-2.54" x2="127" y2="-2.54" width="0.1524" layer="91"/>
-<label x="127" y="-2.54" size="1.778" layer="95" xref="yes"/>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="116.84" y1="0" x2="127" y2="0" width="0.1524" layer="91"/>
+<label x="127" y="0" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
