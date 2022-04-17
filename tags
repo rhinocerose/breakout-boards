@@ -7,3 +7,12 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/86bdb84c/
+Code	purchased/Shifting_microSD-master/LICENSE.md	/^Code$/;"	s	chapter:SparkFun License Information
+Documentation	purchased/Shifting_microSD-master/README.md	/^Documentation$/;"	s	chapter:SparkFun Shifting µSD
+Hardware	purchased/Shifting_microSD-master/LICENSE.md	/^Hardware$/;"	s	chapter:SparkFun License Information
+License Information	purchased/Shifting_microSD-master/README.md	/^License Information$/;"	s	chapter:SparkFun Shifting µSD
+Product Versions	purchased/Shifting_microSD-master/README.md	/^Product Versions$/;"	s	chapter:SparkFun Shifting µSD
+Repository Contents	purchased/Shifting_microSD-master/README.md	/^Repository Contents$/;"	s	chapter:SparkFun Shifting µSD
+SparkFun License Information	purchased/Shifting_microSD-master/LICENSE.md	/^SparkFun License Information$/;"	c
+SparkFun Shifting µSD	purchased/Shifting_microSD-master/README.md	/^SparkFun Shifting µSD$/;"	c
+Version History	purchased/Shifting_microSD-master/README.md	/^Version History$/;"	s	chapter:SparkFun Shifting µSD
