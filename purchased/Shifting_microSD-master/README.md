@@ -17,6 +17,8 @@ Repository Contents
 
 Documentation
 --------------
+![](Assets/Shifting_microSD_v10.pdf)
+
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/microsd-breakout-with-level-shifter-hookup-guide)** &mdash; Basic hookup guide for the Shifting µSD.
 * **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts)** &mdash; Fritzing diagrams for SparkFun products.
 * **[GitHub Repository](https://github.com/sparkfun/Shifting_microSD)** &mdash; Hardware design files and source code.
