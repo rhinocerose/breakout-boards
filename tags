@@ -7,11 +7,112 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/86bdb84c/
+%.eep	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^%.eep: %.elf$/;"	t
+%.elf	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^%.elf: $(OBJ)$/;"	t
+%.hex	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^%.hex: %.elf$/;"	t
+%.i	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^%.i : %.c$/;"	t
+%.lss	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^%.lss: %.elf$/;"	t
+%.o	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^%.o : %.S$/;"	t
+%.o	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^%.o : %.c$/;"	t
+%.s	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^%.s : %.c$/;"	t
+%.sym	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^%.sym: %.elf$/;"	t
 **I2C Logic Pins**	purchased/Adafruit_light_BH1750/README.md	/^#### **I2C Logic Pins**$/;"	t	subsection:Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB""Pinouts
 **Power Pins**	purchased/Adafruit_light_BH1750/README.md	/^#### **Power Pins**$/;"	t	subsection:Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB""Pinouts
+ADXL345	purchased/Sparkfun_accel_ADXL345/Firmware/README.md	/^# ADXL345$/;"	c
+ADXL345	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^ADXL345::ADXL345() {$/;"	f	class:ADXL345
+ADXL345	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^ADXL345::ADXL345(int CS) {$/;"	f	class:ADXL345
+ADXL345	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^class ADXL345$/;"	c
+ADXL345 Breakout Board	purchased/Sparkfun_accel_ADXL345/README.md	/^ADXL345 Breakout Board$/;"	c
+ADXL345_ACTIVITY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_ACTIVITY	/;"	d
+ADXL345_ACT_INACT_CTL	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_ACT_INACT_CTL	/;"	d
+ADXL345_ACT_TAP_STATUS	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_ACT_TAP_STATUS	/;"	d
+ADXL345_BAD_ARG	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BAD_ARG	/;"	d
+ADXL345_BW_0_05	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_0_05	/;"	d
+ADXL345_BW_0_10	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_0_10	/;"	d
+ADXL345_BW_0_20	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_0_20	/;"	d
+ADXL345_BW_0_39	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_0_39	/;"	d
+ADXL345_BW_0_78	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_0_78	/;"	d
+ADXL345_BW_100	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_100	/;"	d
+ADXL345_BW_12_5	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_12_5	/;"	d
+ADXL345_BW_1600	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_1600	/;"	d
+ADXL345_BW_1_56	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_1_56	/;"	d
+ADXL345_BW_200	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_200	/;"	d
+ADXL345_BW_25	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_25	/;"	d
+ADXL345_BW_3_13	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_3_13	/;"	d
+ADXL345_BW_400	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_400	/;"	d
+ADXL345_BW_50	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_50	/;"	d
+ADXL345_BW_6_25	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_6_25	/;"	d
+ADXL345_BW_800	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_800	/;"	d
+ADXL345_BW_RATE	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_BW_RATE	/;"	d
+ADXL345_DATAX0	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DATAX0	/;"	d
+ADXL345_DATAX1	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DATAX1	/;"	d
+ADXL345_DATAY0	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DATAY0	/;"	d
+ADXL345_DATAY1	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DATAY1	/;"	d
+ADXL345_DATAZ0	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DATAZ0	/;"	d
+ADXL345_DATAZ1	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DATAZ1	/;"	d
+ADXL345_DATA_FORMAT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DATA_FORMAT	/;"	d
+ADXL345_DATA_READY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DATA_READY	/;"	d
+ADXL345_DEVICE	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^#define ADXL345_DEVICE /;"	d	file:
+ADXL345_DEVID	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DEVID	/;"	d
+ADXL345_DOUBLE_TAP	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DOUBLE_TAP	/;"	d
+ADXL345_DUR	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_DUR	/;"	d
+ADXL345_ERROR	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_ERROR	/;"	d
+ADXL345_FIFO_CTL	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_FIFO_CTL	/;"	d
+ADXL345_FIFO_STATUS	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_FIFO_STATUS	/;"	d
+ADXL345_FREE_FALL	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_FREE_FALL	/;"	d
+ADXL345_INACTIVITY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INACTIVITY	/;"	d
+ADXL345_INT1_PIN	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT1_PIN	/;"	d
+ADXL345_INT2_PIN	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT2_PIN	/;"	d
+ADXL345_INT_ACTIVITY_BIT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_ACTIVITY_BIT	/;"	d
+ADXL345_INT_DATA_READY_BIT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_DATA_READY_BIT	/;"	d
+ADXL345_INT_DOUBLE_TAP_BIT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_DOUBLE_TAP_BIT	/;"	d
+ADXL345_INT_ENABLE	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_ENABLE	/;"	d
+ADXL345_INT_FREE_FALL_BIT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_FREE_FALL_BIT	/;"	d
+ADXL345_INT_INACTIVITY_BIT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_INACTIVITY_BIT	/;"	d
+ADXL345_INT_MAP	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_MAP	/;"	d
+ADXL345_INT_OVERRUNY_BIT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_OVERRUNY_BIT	/;"	d
+ADXL345_INT_SINGLE_TAP_BIT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_SINGLE_TAP_BIT	/;"	d
+ADXL345_INT_SOURCE	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_SOURCE	/;"	d
+ADXL345_INT_WATERMARK_BIT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_INT_WATERMARK_BIT	/;"	d
+ADXL345_LATENT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_LATENT	/;"	d
+ADXL345_NO_ERROR	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_NO_ERROR	/;"	d
+ADXL345_OFSX	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_OFSX	/;"	d
+ADXL345_OFSY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_OFSY	/;"	d
+ADXL345_OFSZ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_OFSZ	/;"	d
+ADXL345_OK	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_OK	/;"	d
+ADXL345_OVERRUNY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_OVERRUNY	/;"	d
+ADXL345_POWER_CTL	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_POWER_CTL	/;"	d
+ADXL345_READ_ERROR	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_READ_ERROR	/;"	d
+ADXL345_RESERVED1	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_RESERVED1	/;"	d
+ADXL345_SINGLE_TAP	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_SINGLE_TAP	/;"	d
+ADXL345_TAP_AXES	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_TAP_AXES	/;"	d
+ADXL345_THRESH_ACT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_THRESH_ACT	/;"	d
+ADXL345_THRESH_FF	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_THRESH_FF	/;"	d
+ADXL345_THRESH_INACT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_THRESH_INACT	/;"	d
+ADXL345_THRESH_TAP	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_THRESH_TAP	/;"	d
+ADXL345_TIME_FF	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_TIME_FF	/;"	d
+ADXL345_TIME_INACT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_TIME_INACT	/;"	d
+ADXL345_TO_READ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^#define ADXL345_TO_READ /;"	d	file:
+ADXL345_WATERMARK	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_WATERMARK	/;"	d
+ADXL345_WINDOW	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_WINDOW	/;"	d
+ADXL345_h	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^#define ADXL345_h$/;"	d
+ALL_ASFLAGS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^ALL_ASFLAGS = -mmcu=$(MCU) -I. -x assembler-with-cpp $(ASFLAGS)$/;"	m
+ALL_CFLAGS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^ALL_CFLAGS = -mmcu=$(MCU) -I. $(CFLAGS) $(GENDEPFLAGS)$/;"	m
+ASFLAGS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^ASFLAGS = -Wa,-adhlns=$(<:.S=.lst),-gstabs $/;"	m
+ASRC	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^ASRC = $/;"	m
+AVRDUDE	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^AVRDUDE = avrdude$/;"	m
+AVRDUDE_FLAGS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^AVRDUDE_FLAGS = -p $(MCU) -P $(AVRDUDE_PORT) -c $(AVRDUDE_PROGRAMMER)$/;"	m
+AVRDUDE_PORT	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^AVRDUDE_PORT = lpt1$/;"	m
+AVRDUDE_PROGRAMMER	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^AVRDUDE_PROGRAMMER = stk200$/;"	m
+AVRDUDE_WRITE_FLASH	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^AVRDUDE_WRITE_FLASH = -U flash:w:$(TARGET).hex$/;"	m
+AVRMEM	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^AVRMEM = avr-mem.sh $(TARGET).elf $(MCU)$/;"	m
+ActivityINT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::ActivityINT(bool status) {$/;"	f	class:ADXL345	typeref:typename:void
 Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB	purchased/Adafruit_light_BH1750/README.md	/^## Adafruit BH1750 Light Sensor - STEMMA QT \/ Qwiic PCB$/;"	s
 And here comes one trick of the library:	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### And here comes one trick of the library: ###  $/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""Working principle of BH1750
+Applications	purchased/Sparkfun_accel_ADXL345/README.md	/^### Applications$/;"	S	section:ADXL345 Breakout Board""Hardware Overview
+Assembly	purchased/Sparkfun_accel_ADXL345/README.md	/^## Assembly$/;"	s	chapter:ADXL345 Breakout Board
 Autoranging function	purchased/Adafruit_light_BH1750/Firmware/README.md	/^## Autoranging function$/;"	s	chapter:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)
+BAUD	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^#define BAUD /;"	d	file:
 BH1750Address	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^enum BH1750Address$/;"	g
 BH1750CalResult	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^enum BH1750CalResult$/;"	g
 BH1750MtregLimit	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^enum BH1750MtregLimit$/;"	g
@@ -31,28 +132,114 @@ BH1750_QUALITY_LOW	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  
 BH1750_SATURATED	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^static const unsigned int BH1750_SATURATED = 65535;$/;"	v	typeref:typename:const unsigned int
 BH1750_TO_GROUND	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_TO_GROUND = 0x23,$/;"	e	enum:BH1750Address
 BH1750_TO_VCC	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_TO_VCC = 0x5C$/;"	e	enum:BH1750Address
+Breakout Board Pin Function Descriptions	purchased/Sparkfun_accel_ADXL345/README.md	/^### Breakout Board Pin Function Descriptions$/;"	S	section:ADXL345 Breakout Board""Hardware Overview
+CC	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^CC = avr-gcc$/;"	m
+CDEFS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^CDEFS = -DF_CPU=$(F_CPU)UL$/;"	m
+CFLAGS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^CFLAGS = -g$(DEBUG)$/;"	m
+CINCS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^CINCS =$/;"	m
+COFFCONVERT	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^COFFCONVERT=$(OBJCOPY) --debugging \\$/;"	m
+COPY	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^COPY = cp$/;"	m
+CSTANDARD	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^CSTANDARD = -std=gnu99$/;"	m
 Code	purchased/Sparkfun_microSD/LICENSE.md	/^Code$/;"	s	chapter:SparkFun License Information
+DEBUG	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^DEBUG = dwarf-2$/;"	m
+DEBUG_BACKEND	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^DEBUG_BACKEND = avarice$/;"	m
+DEBUG_HOST	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^DEBUG_HOST = localhost$/;"	m
+DEBUG_MFREQ	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^DEBUG_MFREQ = $(F_CPU)$/;"	m
+DEBUG_PORT	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^DEBUG_PORT = 4242$/;"	m
+DEBUG_UI	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^DEBUG_UI = insight$/;"	m
 Description	purchased/Adafruit_light_BH1750/README.md	/^### Description$/;"	S	section:Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB
 Do you need...	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### Do you need...$/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""a high-performance non-blocking library
+Documentation	purchased/Sparkfun_accel_ADXL345/Firmware/README.md	/^Documentation$/;"	s	chapter:SparkFun ADXL345 Arduino Library
 Documentation	purchased/Sparkfun_microSD/README.md	/^Documentation$/;"	s	chapter:SparkFun Shifting µSD
+ELFSIZE	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^ELFSIZE = $(SIZE) -A $(TARGET).elf$/;"	m
+EXTMEMOPTS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^EXTMEMOPTS =$/;"	m
+EXTRAINCDIRS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^EXTRAINCDIRS = $/;"	m
+FORMAT	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^FORMAT = ihex$/;"	m
+FOSC	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^#define FOSC /;"	d	file:
+F_CPU	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^F_CPU = 8000000$/;"	m
+Features	purchased/Sparkfun_accel_ADXL345/README.md	/^### Features$/;"	S	section:ADXL345 Breakout Board""Hardware Overview
+FreeFallINT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::FreeFallINT(bool status) {$/;"	f	class:ADXL345	typeref:typename:void
+GDBINIT_FILE	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^GDBINIT_FILE = __avr_gdbinit$/;"	m
+GENDEPFLAGS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^GENDEPFLAGS = -MD -MP -MF .dep\/$(@F).d$/;"	m
+HEXSIZE	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^HEXSIZE = $(SIZE) --target=$(FORMAT) $(TARGET).hex$/;"	m
 Hardware	purchased/Sparkfun_microSD/LICENSE.md	/^Hardware$/;"	s	chapter:SparkFun License Information
+Hardware Overview	purchased/Sparkfun_accel_ADXL345/README.md	/^## Hardware Overview$/;"	s	chapter:ADXL345 Breakout Board
+Hookup Guide	purchased/Sparkfun_accel_ADXL345/README.md	/^## Hookup Guide$/;"	s	chapter:ADXL345 Breakout Board
+I2C	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^	bool I2C = true;$/;"	m	class:ADXL345	typeref:typename:bool
+I2C Communication	purchased/Sparkfun_accel_ADXL345/README.md	/^### I2C Communication$/;"	S	section:ADXL345 Breakout Board""Assembly
+InactivityINT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::InactivityINT(bool status) {$/;"	f	class:ADXL345	typeref:typename:void
 Installation	purchased/Adafruit_light_BH1750/Firmware/README.md	/^## Installation$/;"	s	chapter:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)
+JTAG_DEV	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^JTAG_DEV = \/dev\/com1$/;"	m
+LDFLAGS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^LDFLAGS = -Wl,-Map=$(TARGET).map,--cref$/;"	m
+LST	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^LST = $(SRC:.c=.lst) $(ASRC:.S=.lst) $/;"	m
 License	purchased/Adafruit_light_BH1750/README.md	/^### License$/;"	S	section:Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB
+License Information	purchased/Sparkfun_accel_ADXL345/Firmware/README.md	/^License Information$/;"	s	chapter:SparkFun ADXL345 Arduino Library
+License Information	purchased/Sparkfun_accel_ADXL345/README.md	/^License Information$/;"	s	chapter:ADXL345 Breakout Board
 License Information	purchased/Sparkfun_microSD/README.md	/^License Information$/;"	s	chapter:SparkFun Shifting µSD
 Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)	purchased/Adafruit_light_BH1750/Firmware/README.md	/^# Light-Sensor BH1750 [![](https:\/\/img.shields.io\/badge\/iki-available-succsess?style=plastic/;"	c
+MATH_LIB	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MATH_LIB = -lm$/;"	m
+MCU	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MCU = atmega168$/;"	m
+MSG_ASSEMBLING	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_ASSEMBLING = Assembling:$/;"	m
+MSG_BEGIN	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_BEGIN = -------- begin --------$/;"	m
+MSG_CLEANING	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_CLEANING = Cleaning project:$/;"	m
+MSG_COFF	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_COFF = Converting to AVR COFF:$/;"	m
+MSG_COMPILING	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_COMPILING = Compiling:$/;"	m
+MSG_EEPROM	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_EEPROM = Creating load file for EEPROM:$/;"	m
+MSG_END	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_END = --------  end  --------$/;"	m
+MSG_ERRORS_NONE	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_ERRORS_NONE = Errors: none$/;"	m
+MSG_EXTENDED_COFF	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_EXTENDED_COFF = Converting to AVR Extended COFF:$/;"	m
+MSG_EXTENDED_LISTING	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_EXTENDED_LISTING = Creating Extended Listing:$/;"	m
+MSG_FLASH	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_FLASH = Creating load file for Flash:$/;"	m
+MSG_LINKING	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_LINKING = Linking:$/;"	m
+MSG_SIZE_AFTER	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_SIZE_AFTER = Size after:$/;"	m
+MSG_SIZE_BEFORE	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_SIZE_BEFORE = Size before: $/;"	m
+MSG_SYMBOL_TABLE	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^MSG_SYMBOL_TABLE = Creating Symbol Table:$/;"	m
+MYUBRR	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^#define MYUBRR /;"	d	file:
 My intention to write this library:	purchased/Adafruit_light_BH1750/Firmware/README.md	/^## My intention to write this library:  $/;"	s	chapter:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)
+NM	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^NM = avr-nm$/;"	m
+OBJ	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^OBJ = $(SRC:.c=.o) $(ASRC:.S=.o) $/;"	m
+OBJCOPY	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^OBJCOPY = avr-objcopy$/;"	m
+OBJDUMP	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^OBJDUMP = avr-objdump$/;"	m
+OPT	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^OPT = s$/;"	m
+PRINTF_LIB	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^PRINTF_LIB = $/;"	m
+PRINTF_LIB_FLOAT	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^PRINTF_LIB_FLOAT = -Wl,-u,vfprintf -lprintf_flt$/;"	m
+PRINTF_LIB_MIN	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^PRINTF_LIB_MIN = -Wl,-u,vfprintf -lprintf_min$/;"	m
+Pin Functionality	purchased/Sparkfun_accel_ADXL345/README.md	/^### Pin Functionality$/;"	S	section:ADXL345 Breakout Board""Hardware Overview
 Pinouts	purchased/Adafruit_light_BH1750/README.md	/^### Pinouts$/;"	S	section:Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB
 Product Versions	purchased/Sparkfun_microSD/README.md	/^Product Versions$/;"	s	chapter:SparkFun Shifting µSD
+Products that use this Library	purchased/Sparkfun_accel_ADXL345/Firmware/README.md	/^Products that use this Library $/;"	s	chapter:SparkFun ADXL345 Arduino Library
+REMOVE	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^REMOVE = rm -f$/;"	m
+Repository Contents	purchased/Sparkfun_accel_ADXL345/Firmware/README.md	/^Repository Contents$/;"	s	chapter:SparkFun ADXL345 Arduino Library
+Repository Contents	purchased/Sparkfun_accel_ADXL345/README.md	/^Repository Contents$/;"	s	chapter:ADXL345 Breakout Board
 Repository Contents	purchased/Sparkfun_microSD/README.md	/^Repository Contents$/;"	s	chapter:SparkFun Shifting µSD
+SCANF_LIB	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^SCANF_LIB = $/;"	m
+SCANF_LIB_FLOAT	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^SCANF_LIB_FLOAT = -Wl,-u,vfscanf -lscanf_flt$/;"	m
+SCANF_LIB_MIN	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^SCANF_LIB_MIN = -Wl,-u,vfscanf -lscanf_min$/;"	m
+SHELL	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^SHELL = sh$/;"	m
+SIZE	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^SIZE = avr-size$/;"	m
+SPI Communication	purchased/Sparkfun_accel_ADXL345/README.md	/^### SPI Communication$/;"	S	section:ADXL345 Breakout Board""Assembly
+SPIfreq	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^	unsigned long SPIfreq = 5000000;$/;"	m	class:ADXL345	typeref:typename:unsigned long
+SRC	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^SRC = $(TARGET).c$/;"	m
+STK500	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^STK500 = stk500$/;"	m
+STK500_FLAGS	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^STK500_FLAGS = -d$(MCU) -c$(STK500_PORT)$/;"	m
+STK500_PATH	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^STK500_PATH = C:\\Program Files\\Atmel\\AVR Tools\\STK500$/;"	m
+STK500_PORT	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^STK500_PORT = USB$/;"	m
+STK500_WRITE_FLASH	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^STK500_WRITE_FLASH = -e -pf -vf -if$(TARGET).hex -ms$/;"	m
 Some explanations to the code:	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### Some explanations to the code: $/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""Working principle of BH1750
+SparkFun ADXL345 Arduino Library	purchased/Sparkfun_accel_ADXL345/Firmware/README.md	/^SparkFun ADXL345 Arduino Library$/;"	c
 SparkFun License Information	purchased/Sparkfun_microSD/LICENSE.md	/^SparkFun License Information$/;"	c
 SparkFun Shifting µSD	purchased/Sparkfun_microSD/README.md	/^SparkFun Shifting µSD$/;"	c
+TARGET	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^TARGET = talktest$/;"	m
 Take a look at the comprehensive *[Wiki](../../wiki)!*	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### Take a look at the comprehensive *[Wiki](..\/..\/wiki)!*$/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""a high-performance non-blocking library
 This difference of time is chip dependend and will never change.	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### This difference of time is chip dependend and will never change.$/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""Working principle of BH1750
 Try this library!	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### Try this library!$/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""a high-performance non-blocking library
+Version History	purchased/Sparkfun_accel_ADXL345/Firmware/README.md	/^Version History$/;"	s	chapter:SparkFun ADXL345 Arduino Library
 Version History	purchased/Sparkfun_microSD/README.md	/^Version History$/;"	s	chapter:SparkFun Shifting µSD
+WINSHELL	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^WINSHELL = cmd$/;"	m
 Working principle of BH1750	purchased/Adafruit_light_BH1750/Firmware/README.md	/^## Working principle of BH1750$/;"	s	chapter:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)
+_CS	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^	int _CS = 10;$/;"	m	class:ADXL345	typeref:typename:int
 _address	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  byte _address;$/;"	m	class:hp_BH1750	typeref:typename:byte
+_buff	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^	byte _buff[6] ;		\/\/	6 Bytes Buffer$/;"	m	class:ADXL345	typeref:typename:byte[6]
 _mtreg	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  byte _mtreg;$/;"	m	class:hp_BH1750	typeref:typename:byte
 _mtregTime	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int _mtregTime;$/;"	m	class:hp_BH1750	typeref:typename:unsigned int
 _nReads	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int _nReads;$/;"	m	class:hp_BH1750	typeref:typename:unsigned int
@@ -71,16 +258,52 @@ _value	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int
 _wire	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  TwoWire *_wire;$/;"	m	class:hp_BH1750	typeref:typename:TwoWire *
 a high-performance non-blocking library	purchased/Adafruit_light_BH1750/Firmware/README.md	/^## a high-performance non-blocking library$/;"	s	chapter:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)
 adjustSettings	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::adjustSettings(byte percent, bool forcePreShot)$/;"	f	class:hp_BH1750	typeref:typename:bool
+adxl	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^#define adxl /;"	d	file:
+all	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^all: begin gccversion sizebefore build sizeafter end$/;"	t
 architectures	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^architectures=*$/;"	k
+architectures	purchased/Sparkfun_accel_ADXL345/Firmware/library.properties	/^architectures=*$/;"	k
 author	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^author=Stefan Armborst$/;"	k
+author	purchased/Sparkfun_accel_ADXL345/Firmware/library.properties	/^author=SparkFun Electronics$/;"	k
 begin	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::begin(byte address, TwoWire *myWire)$/;"	f	class:hp_BH1750	typeref:typename:bool
+begin	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^begin:$/;"	t
+build	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^build: elf hex eep lss sym$/;"	t
 calcLux	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^float hp_BH1750::calcLux(int raw)$/;"	f	class:hp_BH1750	typeref:typename:float
 calcLux	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^float hp_BH1750::calcLux(int raw, BH1750Quality quality, int mtreg)$/;"	f	class:hp_BH1750	typeref:typename:float
 calcSettings	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^void hp_BH1750::calcSettings(unsigned int value, BH1750Quality &qual, byte &mtreg, byte percent)$/;"	f	class:hp_BH1750	typeref:typename:void
 calibrateTiming	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^byte hp_BH1750::calibrateTiming(byte mtregHigh, byte mtregLow)$/;"	f	class:hp_BH1750	typeref:typename:byte
 category	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^category=Sensors$/;"	k
+category	purchased/Sparkfun_accel_ADXL345/Firmware/library.properties	/^category=Sensors$/;"	k
+cbi	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^#define cbi(/;"	d	file:
 checkMtreg	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^byte hp_BH1750::checkMtreg(byte mtreg)$/;"	f	class:hp_BH1750	typeref:typename:byte
+clean	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^clean: begin clean_list end$/;"	t
+clean_list	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^clean_list :$/;"	t
+coff	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^coff: $(TARGET).elf$/;"	t
 convertTimeToMtreg	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^byte hp_BH1750::convertTimeToMtreg(unsigned int time, BH1750Quality quality)$/;"	f	class:hp_BH1750	typeref:typename:byte
+debug	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^debug: gdb-config $(TARGET).elf$/;"	t
+delay_ms	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^void delay_ms(uint16_t x)$/;"	f	typeref:typename:void
+doubleTapINT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::doubleTapINT(bool status) {$/;"	f	class:ADXL345	typeref:typename:void
+eep	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^eep: $(TARGET).eep$/;"	t
+elf	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^elf: $(TARGET).elf$/;"	t
+end	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^end:$/;"	t
+error_code	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^	byte error_code;				\/\/ Initial State$/;"	m	class:ADXL345	typeref:typename:byte
+extcoff	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^extcoff: $(TARGET).elf$/;"	t
+gains	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^	double gains[3];				\/\/ Counts to Gs$/;"	m	class:ADXL345	typeref:typename:double[3]
+gccversion	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^gccversion : $/;"	t
+gdb-config	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^gdb-config: $/;"	t
+getActivityThreshold	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^int ADXL345::getActivityThreshold() {$/;"	f	class:ADXL345	typeref:typename:int
+getAxisGains	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::getAxisGains(double *_gains){$/;"	f	class:ADXL345	typeref:typename:void
+getAxisOffset	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::getAxisOffset(int* x, int* y, int*z) {$/;"	f	class:ADXL345	typeref:typename:void
+getDoubleTapLatency	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^int ADXL345::getDoubleTapLatency() {$/;"	f	class:ADXL345	typeref:typename:int
+getDoubleTapWindow	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^int ADXL345::getDoubleTapWindow() {$/;"	f	class:ADXL345	typeref:typename:int
+getFreeFallDuration	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^int ADXL345::getFreeFallDuration() {$/;"	f	class:ADXL345	typeref:typename:int
+getFreeFallThreshold	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^int ADXL345::getFreeFallThreshold() {$/;"	f	class:ADXL345	typeref:typename:int
+getFullResBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::getFullResBit() {$/;"	f	class:ADXL345	typeref:typename:bool
+getInactivityThreshold	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^int ADXL345::getInactivityThreshold() {$/;"	f	class:ADXL345	typeref:typename:int
+getInterruptLevelBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::getInterruptLevelBit() {$/;"	f	class:ADXL345	typeref:typename:bool
+getInterruptMapping	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::getInterruptMapping(byte interruptBit) {$/;"	f	class:ADXL345	typeref:typename:bool
+getInterruptSource	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::getInterruptSource(byte interruptBit) {$/;"	f	class:ADXL345	typeref:typename:bool
+getInterruptSource	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^byte ADXL345::getInterruptSource() {$/;"	f	class:ADXL345	typeref:typename:byte
+getJustifyBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::getJustifyBit() {$/;"	f	class:ADXL345	typeref:typename:bool
 getLux	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^float hp_BH1750::getLux()$/;"	f	class:hp_BH1750	typeref:typename:float
 getMtreg	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^byte hp_BH1750::getMtreg()$/;"	f	class:hp_BH1750	typeref:typename:byte
 getMtregTime	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getMtregTime()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
@@ -88,19 +311,56 @@ getMtregTime	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsign
 getMtregTime	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getMtregTime(byte mtreg, BH1750Quality quality)$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
 getPercent	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^byte hp_BH1750::getPercent() {$/;"	f	class:hp_BH1750	typeref:typename:byte
 getQuality	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^BH1750Quality hp_BH1750::getQuality()$/;"	f	class:hp_BH1750	typeref:typename:BH1750Quality
+getRangeSetting	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::getRangeSetting(byte* rangeSetting) {$/;"	f	class:ADXL345	typeref:typename:void
+getRate	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^double ADXL345::getRate(){$/;"	f	class:ADXL345	typeref:typename:double
 getRaw	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getRaw()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
 getReads	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getReads()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+getRegisterBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::getRegisterBit(byte regAdress, int bitPos) {$/;"	f	class:ADXL345	typeref:typename:bool
+getSelfTestBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::getSelfTestBit() {$/;"	f	class:ADXL345	typeref:typename:bool
+getSpiBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::getSpiBit() {$/;"	f	class:ADXL345	typeref:typename:bool
+getSuppressBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::getSuppressBit(){$/;"	f	class:ADXL345	typeref:typename:bool
+getTapDuration	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^int ADXL345::getTapDuration() {$/;"	f	class:ADXL345	typeref:typename:int
+getTapThreshold	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^int ADXL345::getTapThreshold() {$/;"	f	class:ADXL345	typeref:typename:int
 getTime	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getTime()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+getTimeInactivity	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^int ADXL345::getTimeInactivity() {$/;"	f	class:ADXL345	typeref:typename:int
 getTimeOffset	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^int hp_BH1750::getTimeOffset()$/;"	f	class:hp_BH1750	typeref:typename:int
 getTimeout	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getTimeout()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
 getTiming	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^BH1750Timing hp_BH1750::getTiming()$/;"	f	class:hp_BH1750	typeref:typename:BH1750Timing
+get_Gxyz	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::get_Gxyz(double *xyz){$/;"	f	class:ADXL345	typeref:typename:void
+get_bw_code	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^byte ADXL345::get_bw_code(){$/;"	f	class:ADXL345	typeref:typename:byte
 hasValue	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::hasValue(bool forceSensor)$/;"	f	class:hp_BH1750	typeref:typename:bool
+hex	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^hex: $(TARGET).hex$/;"	t
 hp_BH1750	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^hp_BH1750::hp_BH1750()$/;"	f	class:hp_BH1750
 hp_BH1750	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^class hp_BH1750$/;"	c
 hp_BH1750_h	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^#define hp_BH1750_h$/;"	d
+iniSPI	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^void iniSPI(void)$/;"	f	typeref:typename:void
+ioinit	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^void ioinit (uint8_t baud)$/;"	f	typeref:typename:void
+isActivityAc	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isActivityAc() {$/;"	f	class:ADXL345	typeref:typename:bool
+isActivitySourceOnX	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isActivitySourceOnX(){$/;"	f	class:ADXL345	typeref:typename:bool
+isActivitySourceOnY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isActivitySourceOnY(){$/;"	f	class:ADXL345	typeref:typename:bool
+isActivitySourceOnZ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isActivitySourceOnZ(){$/;"	f	class:ADXL345	typeref:typename:bool
+isActivityXEnabled	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isActivityXEnabled() {$/;"	f	class:ADXL345	typeref:typename:bool
+isActivityYEnabled	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isActivityYEnabled() {$/;"	f	class:ADXL345	typeref:typename:bool
+isActivityZEnabled	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isActivityZEnabled() {$/;"	f	class:ADXL345	typeref:typename:bool
+isAsleep	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isAsleep(){$/;"	f	class:ADXL345	typeref:typename:bool
+isInactivityAc	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isInactivityAc(){$/;"	f	class:ADXL345	typeref:typename:bool
+isInactivityXEnabled	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isInactivityXEnabled() {$/;"	f	class:ADXL345	typeref:typename:bool
+isInactivityYEnabled	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isInactivityYEnabled() {$/;"	f	class:ADXL345	typeref:typename:bool
+isInactivityZEnabled	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isInactivityZEnabled() {$/;"	f	class:ADXL345	typeref:typename:bool
+isInterruptEnabled	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isInterruptEnabled(byte interruptBit) {$/;"	f	class:ADXL345	typeref:typename:bool
+isLowPower	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isLowPower(){$/;"	f	class:ADXL345	typeref:typename:bool
+isTapDetectionOnX	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isTapDetectionOnX(){$/;"	f	class:ADXL345	typeref:typename:bool
+isTapDetectionOnY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isTapDetectionOnY(){$/;"	f	class:ADXL345	typeref:typename:bool
+isTapDetectionOnZ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isTapDetectionOnZ(){$/;"	f	class:ADXL345	typeref:typename:bool
+isTapSourceOnX	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isTapSourceOnX(){$/;"	f	class:ADXL345	typeref:typename:bool
+isTapSourceOnY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isTapSourceOnY(){$/;"	f	class:ADXL345	typeref:typename:bool
+isTapSourceOnZ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::isTapSourceOnZ(){$/;"	f	class:ADXL345	typeref:typename:bool
+lss	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^lss: $(TARGET).lss $/;"	t
 luxCache	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  float luxCache;$/;"	m	class:hp_BH1750	typeref:typename:float
 luxFactor	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  float luxFactor = 1.2;$/;"	m	class:hp_BH1750	typeref:typename:float
+main	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^int main (void)$/;"	f	typeref:typename:int
 maintainer	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^maintainer=Stefan Armborst$/;"	k
+maintainer	purchased/Sparkfun_accel_ADXL345/Firmware/library.properties	/^maintainer=SparkFun Electronics$/;"	k
 mtregHigh	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  byte mtregHigh;$/;"	m	struct:BH1750Timing	typeref:typename:byte
 mtregHigh_qualityHigh	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int mtregHigh_qualityHigh;$/;"	m	struct:BH1750Timing	typeref:typename:unsigned int
 mtregHigh_qualityLow	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int mtregHigh_qualityLow;$/;"	m	struct:BH1750Timing	typeref:typename:unsigned int
@@ -108,24 +368,92 @@ mtregLow	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  byte mtreg
 mtregLow_qualityHigh	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int mtregLow_qualityHigh;$/;"	m	struct:BH1750Timing	typeref:typename:unsigned int
 mtregLow_qualityLow	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int mtregLow_qualityLow;$/;"	m	struct:BH1750Timing	typeref:typename:unsigned int
 name	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^name=hp_BH1750$/;"	k
+name	purchased/Sparkfun_accel_ADXL345/Firmware/library.properties	/^name=SparkFun ADXL345 Arduino Library$/;"	k
 paragraph	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^paragraph=high performance non-blocking BH1750 library$/;"	k
+paragraph	purchased/Sparkfun_accel_ADXL345/Firmware/library.properties	/^paragraph=An Arduino library for interfacing with the SparkFun Triple Axis Accelerometer Breakou/;"	k
 powerOff	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::powerOff()$/;"	f	class:hp_BH1750	typeref:typename:bool
 powerOn	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::powerOn()$/;"	f	class:hp_BH1750	typeref:typename:bool
+powerOn	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::powerOn() {$/;"	f	class:ADXL345	typeref:typename:void
+printAllRegister	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::printAllRegister() {$/;"	f	class:ADXL345	typeref:typename:void
+print_byte	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void print_byte(byte val){$/;"	f	typeref:typename:void
 processed	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::processed()$/;"	f	class:hp_BH1750	typeref:typename:bool
+program	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^program: $(TARGET).hex $(TARGET).eep$/;"	t
+program_stk500	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^program_stk500: $(TARGET).hex $(TARGET).eep$/;"	t
+readAccel	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::readAccel(int *x, int *y, int *z) {$/;"	f	class:ADXL345	typeref:typename:void
+readAccel	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::readAccel(int *xyz){$/;"	f	class:ADXL345	typeref:typename:void
 readChange	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::readChange(byte mtreg, BH1750Quality quality, bool change)$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+readFrom	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::readFrom(byte address, int num, byte _buff[]) {$/;"	f	class:ADXL345	typeref:typename:void
+readFromI2C	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::readFromI2C(byte address, int num, byte _buff[]) {$/;"	f	class:ADXL345	typeref:typename:void
+readFromSPI	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::readFromSPI(byte __reg_address, int num, byte _buff[]) {$/;"	f	class:ADXL345	typeref:typename:void
 readValue	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::readValue()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
 reset	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::reset()$/;"	f	class:hp_BH1750	typeref:typename:bool
 saturated	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::saturated()$/;"	f	class:hp_BH1750	typeref:typename:bool
+sbi	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^#define sbi(/;"	d	file:
+send_byte	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^void send_byte(uint8_t byte)$/;"	f	typeref:typename:void
+send_dummy	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^ void send_dummy(void)$/;"	f	typeref:typename:void
 sentence	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^sentence=Digital light sensor breakout boards containing the BH1750FVI IC$/;"	k
+sentence	purchased/Sparkfun_accel_ADXL345/Firmware/library.properties	/^sentence=An Arduino library for interfacing with the SparkFun Triple Axis Accelerometer Breakout/;"	k
+setActivityAc	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setActivityAc(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setActivityThreshold	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setActivityThreshold(int activityThreshold) {$/;"	f	class:ADXL345	typeref:typename:void
+setActivityX	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setActivityX(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setActivityXYZ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setActivityXYZ(bool stateX, bool stateY, bool stateZ) {$/;"	f	class:ADXL345	typeref:typename:void
+setActivityY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setActivityY(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setActivityZ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setActivityZ(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setAxisGains	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setAxisGains(double *_gains){$/;"	f	class:ADXL345	typeref:typename:void
+setAxisOffset	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setAxisOffset(int x, int y, int z) {$/;"	f	class:ADXL345	typeref:typename:void
+setDoubleTapLatency	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setDoubleTapLatency(int doubleTapLatency) {$/;"	f	class:ADXL345	typeref:typename:void
+setDoubleTapWindow	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setDoubleTapWindow(int doubleTapWindow) {$/;"	f	class:ADXL345	typeref:typename:void
+setFreeFallDuration	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setFreeFallDuration(int freeFallDuration) {$/;"	f	class:ADXL345	typeref:typename:void
+setFreeFallThreshold	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setFreeFallThreshold(int freeFallThreshold) {$/;"	f	class:ADXL345	typeref:typename:void
+setFullResBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setFullResBit(bool fullResBit) {$/;"	f	class:ADXL345	typeref:typename:void
+setImportantInterruptMapping	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setImportantInterruptMapping(int single_tap, int double_tap, int free_fall, int ac/;"	f	class:ADXL345	typeref:typename:void
+setInactivityAc	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setInactivityAc(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setInactivityThreshold	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setInactivityThreshold(int inactivityThreshold) {$/;"	f	class:ADXL345	typeref:typename:void
+setInactivityX	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setInactivityX(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setInactivityXYZ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setInactivityXYZ(bool stateX, bool stateY, bool stateZ) {$/;"	f	class:ADXL345	typeref:typename:void
+setInactivityY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setInactivityY(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setInactivityZ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setInactivityZ(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setInterrupt	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setInterrupt(byte interruptBit, bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setInterruptLevelBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setInterruptLevelBit(bool interruptLevelBit) {$/;"	f	class:ADXL345	typeref:typename:void
+setInterruptMapping	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setInterruptMapping(byte interruptBit, bool interruptPin) {$/;"	f	class:ADXL345	typeref:typename:void
+setJustifyBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setJustifyBit(bool justifyBit) {$/;"	f	class:ADXL345	typeref:typename:void
+setLowPower	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setLowPower(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
 setQuality	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^void hp_BH1750::setQuality(BH1750Quality quality)$/;"	f	class:hp_BH1750	typeref:typename:void
+setRangeSetting	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setRangeSetting(int val) {$/;"	f	class:ADXL345	typeref:typename:void
+setRate	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setRate(double rate){$/;"	f	class:ADXL345	typeref:typename:void
+setRegisterBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setRegisterBit(byte regAdress, int bitPos, bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setSelfTestBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setSelfTestBit(bool selfTestBit) {$/;"	f	class:ADXL345	typeref:typename:void
+setSpiBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setSpiBit(bool spiBit) {$/;"	f	class:ADXL345	typeref:typename:void
+setSuppressBit	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setSuppressBit(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setTapDetectionOnX	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setTapDetectionOnX(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setTapDetectionOnXYZ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setTapDetectionOnXYZ(bool stateX, bool stateY, bool stateZ) {$/;"	f	class:ADXL345	typeref:typename:void
+setTapDetectionOnY	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setTapDetectionOnY(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setTapDetectionOnZ	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setTapDetectionOnZ(bool state) {$/;"	f	class:ADXL345	typeref:typename:void
+setTapDuration	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setTapDuration(int tapDuration) {$/;"	f	class:ADXL345	typeref:typename:void
+setTapThreshold	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setTapThreshold(int tapThreshold) {$/;"	f	class:ADXL345	typeref:typename:void
+setTimeInactivity	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::setTimeInactivity(int timeInactivity) {$/;"	f	class:ADXL345	typeref:typename:void
 setTimeOffset	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^void hp_BH1750::setTimeOffset(int offset)$/;"	f	class:hp_BH1750	typeref:typename:void
 setTimeout	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^void hp_BH1750::setTimeout(int timeout)$/;"	f	class:hp_BH1750	typeref:typename:void
 setTiming	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^void hp_BH1750::setTiming(BH1750Timing timing)$/;"	f	class:hp_BH1750	typeref:typename:void
+set_bw	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::set_bw(byte bw_code){$/;"	f	class:ADXL345	typeref:typename:void
+singleTapINT	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::singleTapINT(bool status) {$/;"	f	class:ADXL345	typeref:typename:void
+sizeafter	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^sizeafter:$/;"	t
+sizebefore	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^sizebefore:$/;"	t
 start	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::start()$/;"	f	class:hp_BH1750	typeref:typename:bool
 start	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::start(BH1750Quality quality, byte mtreg)$/;"	f	class:hp_BH1750	typeref:typename:bool
+status	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.h	/^	bool status;					\/\/ Set When Error Exists $/;"	m	class:ADXL345	typeref:typename:bool
+sym	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/makefile	/^sym: $(TARGET).sym$/;"	t
 tested with Arduino and ESP8266	purchased/Adafruit_light_BH1750/Firmware/README.md	/^#### tested with Arduino and ESP8266     $/;"	t	subsection:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""a high-performance non-blocking library""the most comprehensive library avialable
 the most comprehensive library avialable	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### the most comprehensive library avialable$/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""a high-performance non-blocking library
+triggered	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^bool ADXL345::triggered(byte interrupts, int mask){$/;"	f	class:ADXL345	typeref:typename:bool
+uart_getchar	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^uint8_t uart_getchar(void)$/;"	f	typeref:typename:uint8_t
+uart_putchar	purchased/Sparkfun_accel_ADXL345/Libraries/ADXL345-talktest/talktest.c	/^static int uart_putchar(char c, FILE *stream)$/;"	f	typeref:typename:int	file:
 url	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^url=https:\/\/github.com\/Starmbi\/hp_BH1750$/;"	k
+url	purchased/Sparkfun_accel_ADXL345/Firmware/library.properties	/^url=https:\/\/github.com\/sparkfun\/SparkFun_ADXL345_Arduino_Library$/;"	k
 version	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^version=1.0.0$/;"	k
+version	purchased/Sparkfun_accel_ADXL345/Firmware/library.properties	/^version=1.0.0$/;"	k
 writeByte	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::writeByte(byte b)$/;"	f	class:hp_BH1750	typeref:typename:bool
 writeMtreg	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::writeMtreg(byte mtreg)$/;"	f	class:hp_BH1750	typeref:typename:bool
+writeTo	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::writeTo(byte address, byte val) {$/;"	f	class:ADXL345	typeref:typename:void
+writeToI2C	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::writeToI2C(byte _address, byte _val) {$/;"	f	class:ADXL345	typeref:typename:void
+writeToSPI	purchased/Sparkfun_accel_ADXL345/Firmware/src/SparkFun_ADXL345.cpp	/^void ADXL345::writeToSPI(byte __reg_address, byte __val) {$/;"	f	class:ADXL345	typeref:typename:void
