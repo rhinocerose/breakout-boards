@@ -7,12 +7,125 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/86bdb84c/
-Code	purchased/Shifting_microSD-master/LICENSE.md	/^Code$/;"	s	chapter:SparkFun License Information
-Documentation	purchased/Shifting_microSD-master/README.md	/^Documentation$/;"	s	chapter:SparkFun Shifting µSD
-Hardware	purchased/Shifting_microSD-master/LICENSE.md	/^Hardware$/;"	s	chapter:SparkFun License Information
-License Information	purchased/Shifting_microSD-master/README.md	/^License Information$/;"	s	chapter:SparkFun Shifting µSD
-Product Versions	purchased/Shifting_microSD-master/README.md	/^Product Versions$/;"	s	chapter:SparkFun Shifting µSD
-Repository Contents	purchased/Shifting_microSD-master/README.md	/^Repository Contents$/;"	s	chapter:SparkFun Shifting µSD
-SparkFun License Information	purchased/Shifting_microSD-master/LICENSE.md	/^SparkFun License Information$/;"	c
-SparkFun Shifting µSD	purchased/Shifting_microSD-master/README.md	/^SparkFun Shifting µSD$/;"	c
-Version History	purchased/Shifting_microSD-master/README.md	/^Version History$/;"	s	chapter:SparkFun Shifting µSD
+**I2C Logic Pins**	purchased/Adafruit_light_BH1750/README.md	/^#### **I2C Logic Pins**$/;"	t	subsection:Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB""Pinouts
+**Power Pins**	purchased/Adafruit_light_BH1750/README.md	/^#### **Power Pins**$/;"	t	subsection:Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB""Pinouts
+Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB	purchased/Adafruit_light_BH1750/README.md	/^## Adafruit BH1750 Light Sensor - STEMMA QT \/ Qwiic PCB$/;"	s
+And here comes one trick of the library:	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### And here comes one trick of the library: ###  $/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""Working principle of BH1750
+Autoranging function	purchased/Adafruit_light_BH1750/Firmware/README.md	/^## Autoranging function$/;"	s	chapter:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)
+BH1750Address	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^enum BH1750Address$/;"	g
+BH1750CalResult	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^enum BH1750CalResult$/;"	g
+BH1750MtregLimit	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^enum BH1750MtregLimit$/;"	g
+BH1750Quality	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^enum BH1750Quality$/;"	g
+BH1750Timing	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^struct BH1750Timing$/;"	s
+BH1750_CAL_COMMUNICATION_ERROR	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_CAL_COMMUNICATION_ERROR = 4,$/;"	e	enum:BH1750CalResult
+BH1750_CAL_MTREG_CHANGED	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_CAL_MTREG_CHANGED = 1,$/;"	e	enum:BH1750CalResult
+BH1750_CAL_OK	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_CAL_OK = 0,$/;"	e	enum:BH1750CalResult
+BH1750_CAL_TOO_BRIGHT	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_CAL_TOO_BRIGHT = 2,$/;"	e	enum:BH1750CalResult
+BH1750_CAL_TOO_DARK	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_CAL_TOO_DARK = 3,$/;"	e	enum:BH1750CalResult
+BH1750_MTREG_DEFAULT	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_MTREG_DEFAULT = 69$/;"	e	enum:BH1750MtregLimit
+BH1750_MTREG_HIGH	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_MTREG_HIGH = 254,$/;"	e	enum:BH1750MtregLimit
+BH1750_MTREG_LOW	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_MTREG_LOW = 31, \/\/the datashet specifies 31 as minimum value$/;"	e	enum:BH1750MtregLimit
+BH1750_QUALITY_HIGH	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_QUALITY_HIGH = 0x20,$/;"	e	enum:BH1750Quality
+BH1750_QUALITY_HIGH2	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_QUALITY_HIGH2 = 0x21,$/;"	e	enum:BH1750Quality
+BH1750_QUALITY_LOW	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_QUALITY_LOW = 0x23,$/;"	e	enum:BH1750Quality
+BH1750_SATURATED	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^static const unsigned int BH1750_SATURATED = 65535;$/;"	v	typeref:typename:const unsigned int
+BH1750_TO_GROUND	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_TO_GROUND = 0x23,$/;"	e	enum:BH1750Address
+BH1750_TO_VCC	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750_TO_VCC = 0x5C$/;"	e	enum:BH1750Address
+Code	purchased/Sparkfun_microSD/LICENSE.md	/^Code$/;"	s	chapter:SparkFun License Information
+Description	purchased/Adafruit_light_BH1750/README.md	/^### Description$/;"	S	section:Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB
+Do you need...	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### Do you need...$/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""a high-performance non-blocking library
+Documentation	purchased/Sparkfun_microSD/README.md	/^Documentation$/;"	s	chapter:SparkFun Shifting µSD
+Hardware	purchased/Sparkfun_microSD/LICENSE.md	/^Hardware$/;"	s	chapter:SparkFun License Information
+Installation	purchased/Adafruit_light_BH1750/Firmware/README.md	/^## Installation$/;"	s	chapter:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)
+License	purchased/Adafruit_light_BH1750/README.md	/^### License$/;"	S	section:Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB
+License Information	purchased/Sparkfun_microSD/README.md	/^License Information$/;"	s	chapter:SparkFun Shifting µSD
+Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)	purchased/Adafruit_light_BH1750/Firmware/README.md	/^# Light-Sensor BH1750 [![](https:\/\/img.shields.io\/badge\/iki-available-succsess?style=plastic/;"	c
+My intention to write this library:	purchased/Adafruit_light_BH1750/Firmware/README.md	/^## My intention to write this library:  $/;"	s	chapter:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)
+Pinouts	purchased/Adafruit_light_BH1750/README.md	/^### Pinouts$/;"	S	section:Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB
+Product Versions	purchased/Sparkfun_microSD/README.md	/^Product Versions$/;"	s	chapter:SparkFun Shifting µSD
+Repository Contents	purchased/Sparkfun_microSD/README.md	/^Repository Contents$/;"	s	chapter:SparkFun Shifting µSD
+Some explanations to the code:	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### Some explanations to the code: $/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""Working principle of BH1750
+SparkFun License Information	purchased/Sparkfun_microSD/LICENSE.md	/^SparkFun License Information$/;"	c
+SparkFun Shifting µSD	purchased/Sparkfun_microSD/README.md	/^SparkFun Shifting µSD$/;"	c
+Take a look at the comprehensive *[Wiki](../../wiki)!*	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### Take a look at the comprehensive *[Wiki](..\/..\/wiki)!*$/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""a high-performance non-blocking library
+This difference of time is chip dependend and will never change.	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### This difference of time is chip dependend and will never change.$/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""Working principle of BH1750
+Try this library!	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### Try this library!$/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""a high-performance non-blocking library
+Version History	purchased/Sparkfun_microSD/README.md	/^Version History$/;"	s	chapter:SparkFun Shifting µSD
+Working principle of BH1750	purchased/Adafruit_light_BH1750/Firmware/README.md	/^## Working principle of BH1750$/;"	s	chapter:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)
+_address	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  byte _address;$/;"	m	class:hp_BH1750	typeref:typename:byte
+_mtreg	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  byte _mtreg;$/;"	m	class:hp_BH1750	typeref:typename:byte
+_mtregTime	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int _mtregTime;$/;"	m	class:hp_BH1750	typeref:typename:unsigned int
+_nReads	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int _nReads;$/;"	m	class:hp_BH1750	typeref:typename:unsigned int
+_offset	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  int _offset = 0;$/;"	m	class:hp_BH1750	typeref:typename:int
+_percent	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  byte _percent=50;$/;"	m	class:hp_BH1750	typeref:typename:byte
+_processed	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  bool _processed = false;$/;"	m	class:hp_BH1750	typeref:typename:bool
+_qualFak	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  float _qualFak = 0.5;$/;"	m	class:hp_BH1750	typeref:typename:float
+_quality	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750Quality _quality;$/;"	m	class:hp_BH1750	typeref:typename:BH1750Quality
+_resultMillis	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned long _resultMillis;$/;"	m	class:hp_BH1750	typeref:typename:unsigned long
+_startMillis	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned long _startMillis;$/;"	m	class:hp_BH1750	typeref:typename:unsigned long
+_time	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int _time;$/;"	m	class:hp_BH1750	typeref:typename:unsigned int
+_timeout	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned long _timeout = 10;$/;"	m	class:hp_BH1750	typeref:typename:unsigned long
+_timeoutMillis	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned long _timeoutMillis;$/;"	m	class:hp_BH1750	typeref:typename:unsigned long
+_timing	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  BH1750Timing _timing;$/;"	m	class:hp_BH1750	typeref:typename:BH1750Timing
+_value	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int _value;$/;"	m	class:hp_BH1750	typeref:typename:unsigned int
+_wire	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  TwoWire *_wire;$/;"	m	class:hp_BH1750	typeref:typename:TwoWire *
+a high-performance non-blocking library	purchased/Adafruit_light_BH1750/Firmware/README.md	/^## a high-performance non-blocking library$/;"	s	chapter:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)
+adjustSettings	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::adjustSettings(byte percent, bool forcePreShot)$/;"	f	class:hp_BH1750	typeref:typename:bool
+architectures	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^architectures=*$/;"	k
+author	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^author=Stefan Armborst$/;"	k
+begin	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::begin(byte address, TwoWire *myWire)$/;"	f	class:hp_BH1750	typeref:typename:bool
+calcLux	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^float hp_BH1750::calcLux(int raw)$/;"	f	class:hp_BH1750	typeref:typename:float
+calcLux	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^float hp_BH1750::calcLux(int raw, BH1750Quality quality, int mtreg)$/;"	f	class:hp_BH1750	typeref:typename:float
+calcSettings	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^void hp_BH1750::calcSettings(unsigned int value, BH1750Quality &qual, byte &mtreg, byte percent)$/;"	f	class:hp_BH1750	typeref:typename:void
+calibrateTiming	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^byte hp_BH1750::calibrateTiming(byte mtregHigh, byte mtregLow)$/;"	f	class:hp_BH1750	typeref:typename:byte
+category	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^category=Sensors$/;"	k
+checkMtreg	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^byte hp_BH1750::checkMtreg(byte mtreg)$/;"	f	class:hp_BH1750	typeref:typename:byte
+convertTimeToMtreg	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^byte hp_BH1750::convertTimeToMtreg(unsigned int time, BH1750Quality quality)$/;"	f	class:hp_BH1750	typeref:typename:byte
+getLux	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^float hp_BH1750::getLux()$/;"	f	class:hp_BH1750	typeref:typename:float
+getMtreg	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^byte hp_BH1750::getMtreg()$/;"	f	class:hp_BH1750	typeref:typename:byte
+getMtregTime	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getMtregTime()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+getMtregTime	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getMtregTime(byte mtreg)$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+getMtregTime	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getMtregTime(byte mtreg, BH1750Quality quality)$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+getPercent	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^byte hp_BH1750::getPercent() {$/;"	f	class:hp_BH1750	typeref:typename:byte
+getQuality	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^BH1750Quality hp_BH1750::getQuality()$/;"	f	class:hp_BH1750	typeref:typename:BH1750Quality
+getRaw	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getRaw()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+getReads	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getReads()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+getTime	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getTime()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+getTimeOffset	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^int hp_BH1750::getTimeOffset()$/;"	f	class:hp_BH1750	typeref:typename:int
+getTimeout	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::getTimeout()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+getTiming	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^BH1750Timing hp_BH1750::getTiming()$/;"	f	class:hp_BH1750	typeref:typename:BH1750Timing
+hasValue	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::hasValue(bool forceSensor)$/;"	f	class:hp_BH1750	typeref:typename:bool
+hp_BH1750	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^hp_BH1750::hp_BH1750()$/;"	f	class:hp_BH1750
+hp_BH1750	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^class hp_BH1750$/;"	c
+hp_BH1750_h	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^#define hp_BH1750_h$/;"	d
+luxCache	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  float luxCache;$/;"	m	class:hp_BH1750	typeref:typename:float
+luxFactor	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  float luxFactor = 1.2;$/;"	m	class:hp_BH1750	typeref:typename:float
+maintainer	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^maintainer=Stefan Armborst$/;"	k
+mtregHigh	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  byte mtregHigh;$/;"	m	struct:BH1750Timing	typeref:typename:byte
+mtregHigh_qualityHigh	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int mtregHigh_qualityHigh;$/;"	m	struct:BH1750Timing	typeref:typename:unsigned int
+mtregHigh_qualityLow	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int mtregHigh_qualityLow;$/;"	m	struct:BH1750Timing	typeref:typename:unsigned int
+mtregLow	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  byte mtregLow;$/;"	m	struct:BH1750Timing	typeref:typename:byte
+mtregLow_qualityHigh	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int mtregLow_qualityHigh;$/;"	m	struct:BH1750Timing	typeref:typename:unsigned int
+mtregLow_qualityLow	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.h	/^  unsigned int mtregLow_qualityLow;$/;"	m	struct:BH1750Timing	typeref:typename:unsigned int
+name	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^name=hp_BH1750$/;"	k
+paragraph	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^paragraph=high performance non-blocking BH1750 library$/;"	k
+powerOff	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::powerOff()$/;"	f	class:hp_BH1750	typeref:typename:bool
+powerOn	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::powerOn()$/;"	f	class:hp_BH1750	typeref:typename:bool
+processed	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::processed()$/;"	f	class:hp_BH1750	typeref:typename:bool
+readChange	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::readChange(byte mtreg, BH1750Quality quality, bool change)$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+readValue	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^unsigned int hp_BH1750::readValue()$/;"	f	class:hp_BH1750	typeref:typename:unsigned int
+reset	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::reset()$/;"	f	class:hp_BH1750	typeref:typename:bool
+saturated	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::saturated()$/;"	f	class:hp_BH1750	typeref:typename:bool
+sentence	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^sentence=Digital light sensor breakout boards containing the BH1750FVI IC$/;"	k
+setQuality	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^void hp_BH1750::setQuality(BH1750Quality quality)$/;"	f	class:hp_BH1750	typeref:typename:void
+setTimeOffset	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^void hp_BH1750::setTimeOffset(int offset)$/;"	f	class:hp_BH1750	typeref:typename:void
+setTimeout	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^void hp_BH1750::setTimeout(int timeout)$/;"	f	class:hp_BH1750	typeref:typename:void
+setTiming	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^void hp_BH1750::setTiming(BH1750Timing timing)$/;"	f	class:hp_BH1750	typeref:typename:void
+start	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::start()$/;"	f	class:hp_BH1750	typeref:typename:bool
+start	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::start(BH1750Quality quality, byte mtreg)$/;"	f	class:hp_BH1750	typeref:typename:bool
+tested with Arduino and ESP8266	purchased/Adafruit_light_BH1750/Firmware/README.md	/^#### tested with Arduino and ESP8266     $/;"	t	subsection:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""a high-performance non-blocking library""the most comprehensive library avialable
+the most comprehensive library avialable	purchased/Adafruit_light_BH1750/Firmware/README.md	/^### the most comprehensive library avialable$/;"	S	section:Light-Sensor BH1750 [![](https://img.shields.io/badge/iki-available-succsess?style=plastic&logo=wikipedia)](https://github.com/Starmbi/hp_BH1750/wiki)""a high-performance non-blocking library
+url	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^url=https:\/\/github.com\/Starmbi\/hp_BH1750$/;"	k
+version	purchased/Adafruit_light_BH1750/Firmware/library.properties	/^version=1.0.0$/;"	k
+writeByte	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::writeByte(byte b)$/;"	f	class:hp_BH1750	typeref:typename:bool
+writeMtreg	purchased/Adafruit_light_BH1750/Firmware/src/hp_BH1750.cpp	/^bool hp_BH1750::writeMtreg(byte mtreg)$/;"	f	class:hp_BH1750	typeref:typename:bool
