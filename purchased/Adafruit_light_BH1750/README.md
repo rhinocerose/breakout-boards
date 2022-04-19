@@ -1,6 +1,6 @@
 ## Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic PCB
 
-<a href="http://www.adafruit.com/products/4681"><img src="assets/4681.jpg?raw=true" width="500px"><br/>
+<a href="http://www.adafruit.com/products/4681"><img src="https://cdn-shop.adafruit.com/970x728/4681-00.jpg?raw=true" width="500px"><br/>
 Click here to purchase one from the Adafruit shop</a>
 
 PCB files for the Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic.
