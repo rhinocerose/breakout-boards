@@ -36,9 +36,8 @@
 * @value  : 8-bit value of corresponding register
 * Since the register values to be written are 8-bit, there is no need to multiple writing
 */
-static void writeRegister(uint8_t address,uint8_t value)
-{
-		if (address > 63)
+static void writeRegister(uint8_t address,uint8_t value) {
+	if (address > 63)
 		address = 63;
 
 	// Setting R/W = 0, i.e.: Write Mode
@@ -49,25 +48,23 @@ static void writeRegister(uint8_t address,uint8_t value)
 	HAL_SPI_Transmit(&SPIhandler,&value,1,10);
 	HAL_GPIO_WritePin(ADXLCS_GPIO_Port,ADXLCS_Pin,GPIO_PIN_SET);
 
-
 }
 
 
 /** Reading ADXL Registers.
 * @address: 8-bit address of register
 * @retval value  : array of 8-bit values of corresponding register
-* @num		: number of bytes to be written
+* @num			 : number of bytes to be written
 */
 
-static void readRegister(uint8_t address,uint8_t * value, uint8_t num)
-{
-		if (address > 63)
+static void readRegister(uint8_t address,uint8_t * value, uint8_t num) {
+	if (address > 63)
 		address = 63;
 
-		// Multiple Byte Read Settings
-		if (num > 1)
+	// Multiple Byte Read Settings
+	if (num > 1)
 		address |= 0x40;
-		else
+	else
 		address &= ~(0x40);
 
 		// Setting R/W = 1, i.e.: Read Mode
@@ -77,7 +74,6 @@ static void readRegister(uint8_t address,uint8_t * value, uint8_t num)
 	HAL_SPI_Transmit(&SPIhandler,&address,1,10);
 	HAL_SPI_Receive(&SPIhandler,value,num,10);
 	HAL_GPIO_WritePin(ADXLCS_GPIO_Port,ADXLCS_Pin,GPIO_PIN_SET);
-
 
 }
 
@@ -91,52 +87,52 @@ Bandwidth Settings:
 							 = 1 // Low Power Mode
  @param BW : Badwidth; See Tables 6 and 7
 
-								NORMAL MODE
-				BW value 	|  Output Data Rate (Hz)
-				---------------------------------
-						6 		|  				6.25 // Default
-						7 		|  				12.5
-						8 		|  				25
-						9 		|  				50
-						10 		|  				100
-						11 		|  				200
-						12 		|  				400
-						13 		|  				800
-						14 		|  				1600
-						15 		|  				3200
+						NORMAL MODE
+		BW value 	|  Output Data Rate (Hz)
+		---------------------------------
+				6 		|  				6.25 // Default
+				7 		|  				12.5
+				8 		|  				25
+				9 		|  				50
+				10 		|  				100
+				11 		|  				200
+				12 		|  				400
+				13 		|  				800
+				14 		|  				1600
+				15 		|  				3200
 
 
-								LOWPOWER MODE
-				BW value 	|  Output Data Rate (Hz)
-				---------------------------------
-						7 		|  				12.5	// Default
-						8 		|  				25
-						9 		|  				50
-						10 		|  				100
-						11 		|  				200
-						12 		|  				400
+						LOWPOWER MODE
+		BW value 	|  Output Data Rate (Hz)
+		---------------------------------
+				7 		|  				12.5	// Default
+				8 		|  				25
+				9 		|  				50
+				10 		|  				100
+				11 		|  				200
+				12 		|  				400
 			*/
-static void adxlBW(ADXL_InitTypeDef * adxl)
-		{
-		uint8_t bwreg=0;
+static void adxlBW(ADXL_InitTypeDef * adxl)	{
+	uint8_t bwreg=0;
+	writeRegister(BW_RATE,bwreg);
+	if (adxl->LPMode == LPMODE_LOWPOWER) {
+		// Low power mode
+		bwreg |= (1 << 4);
+		if ( ((adxl->Rate) <7) && ((adxl->Rate)>12) ) 
+			bwreg += 7;
+		else 
+			bwreg +=(adxl->Rate);
 		writeRegister(BW_RATE,bwreg);
-		if (adxl->LPMode == LPMODE_LOWPOWER)
-						{
-						// Low power mode
-						bwreg |= (1 << 4);
-						if ( ((adxl->Rate) <7) && ((adxl->Rate)>12) ) bwreg += 7;
-								else bwreg +=(adxl->Rate);
-						writeRegister(BW_RATE,bwreg);
-						}
-		else
-				{
-				// Normal Mode
+	} else {
+	// Normal Mode
 
-				if ( ((adxl->Rate) <6) && ((adxl->Rate)>15) ) bwreg += 6;
-						else bwreg +=(adxl->Rate);
-				writeRegister(BW_RATE,bwreg);
-				}
-		}
+		if ( ((adxl->Rate) <6) && ((adxl->Rate)>15) ) 
+			bwreg += 6;
+		else 
+			bwreg +=(adxl->Rate);
+		writeRegister(BW_RATE,bwreg);
+	}
+}
 
 
 /**
@@ -144,39 +140,37 @@ static void adxlBW(ADXL_InitTypeDef * adxl)
 	DATA_FORMAT[7-0] = SELF_TEST  SPI  INT_INVERT  0  FULL_RES  Justify  Range[2]
 
 	SPI bit: 			0 = 4-wire (Default)
-								1 = 3-wire
+						1 = 3-wire
 	INT_Invert:   		0 = Active High (Default)
-								1 = Active Low
+						1 = Active Low
 	Full Res:			0 = 10-bit (Default)
-								1 = Full Resolution
+						1 = Full Resolution
 	Justify:			0 = Signed (Default)
-								1 = MSB
+						1 = MSB
 	Range:
 
 
-				Range value 	|  Output Data Rate (Hz)
-				---------------------------------
-						0 		|  				+-2g	// Default
-						1 		|  				+-4g
-						2 		|  				+-8g
-						3 		|  				+-16g
+		Range value 	|  Output Data Rate (Hz)
+		---------------------------------
+				0 		|  				+-2g	// Default
+				1 		|  				+-4g
+				2 		|  				+-8g
+				3 		|  				+-16g
 
 		*/
 
-static void adxlFormat(ADXL_InitTypeDef * adxl)
-			{
-			uint8_t formatreg=0;
-			writeRegister(DATA_FORMAT,formatreg);
-			formatreg = (adxl->SPIMode << 6) | (adxl->IntMode << 5) | (adxl->Justify << 2) | (adxl->Resolution << 3);
-			formatreg += (adxl -> Range);
-			writeRegister(DATA_FORMAT,formatreg);
-			}
+static void adxlFormat(ADXL_InitTypeDef * adxl) {
+	uint8_t formatreg=0;
+	writeRegister(DATA_FORMAT,formatreg);
+	formatreg = (adxl->SPIMode << 6) | (adxl->IntMode << 5) | (adxl->Justify << 2) | (adxl->Resolution << 3);
+	formatreg += (adxl -> Range);
+	writeRegister(DATA_FORMAT,formatreg);
+}
 
 // Public Functions
 
 // Initializes the ADXL unit
-adxlStatus ADXL_Init(ADXL_InitTypeDef * adxl)
-{
+adxlStatus ADXL_Init(ADXL_InitTypeDef * adxl) {
 	// CS is active low. Here we deselect the chip. In each function the CS signal is asserted individually
 	HAL_GPIO_WritePin(ADXLCS_GPIO_Port,ADXLCS_Pin,GPIO_PIN_SET);
 	// Unknown delay should apply
@@ -184,38 +178,43 @@ adxlStatus ADXL_Init(ADXL_InitTypeDef * adxl)
 	uint8_t testval = 0;
 	// The Device Address register is constant, i.e. = 0xE5
 	readRegister(DEVID,&testval,1);
-	if (testval != 0xE5) return ADXL_ERR;
+	if (testval != 0xE5) 
+		return ADXL_ERR;
 	// Init. of BW_RATE and DATAFORMAT registers
 	adxlBW(adxl);
 	adxlFormat(adxl);
 
 	// Settings gains
-	if (adxl->Resolution == RESOLUTION_10BIT)
-			{
+	if (adxl->Resolution == RESOLUTION_10BIT) {
 			switch (adxl->Range) {
-							case RANGE_2G:
-								GAINX = GAINY = GAINZ = 1/255.0f;
-								break;
-							case RANGE_4G:
-								GAINX = GAINY = GAINZ = 1/127.0f;
-								break;
-							case RANGE_8G:
-								GAINX = GAINY = GAINZ = 1/63.0f;
-								break;
-							case RANGE_16G:
-								GAINX = GAINY = GAINZ = 1/31.0f;
-								break;
-								}
-			} else
-			{
-			GAINX = GAINY = GAINZ = 1/255.0f;
+				case RANGE_2G:
+					GAINX = GAINY = GAINZ = 1/255.0f;
+					break;
+				case RANGE_4G:
+					GAINX = GAINY = GAINZ = 1/127.0f;
+					break;
+				case RANGE_8G:
+					GAINX = GAINY = GAINZ = 1/63.0f;
+					break;
+				case RANGE_16G:
+					GAINX = GAINY = GAINZ = 1/31.0f;
+					break;
 			}
+	} else {
+		GAINX = GAINY = GAINZ = 1/255.0f;
+	}
 	// Setting AutoSleep and Link bits
-			uint8_t reg;
-			readRegister(POWER_CTL,&reg,1);
-			if ( (adxl->AutoSleep) == AUTOSLEEPON) reg |= (1 << 4); else reg &= ~(1 << 4);
-			if ( (adxl->LinkMode) == LINKMODEON) reg |= (1 << 5); else reg &= ~(1 << 5);
-			writeRegister(POWER_CTL,reg);
+	uint8_t reg;
+	readRegister(POWER_CTL,&reg,1);
+	if ( (adxl->AutoSleep) == AUTOSLEEPON) 
+		reg |= (1 << 4); 
+	else 
+		reg &= ~(1 << 4);
+	if ( (adxl->LinkMode) == LINKMODEON) 
+		reg |= (1 << 5); 
+	else 
+		reg &= ~(1 << 5);
+	writeRegister(POWER_CTL,reg);
 
 	return ADXL_OK;
 
@@ -232,50 +231,45 @@ adxlStatus ADXL_Init(ADXL_InitTypeDef * adxl)
 						ADXL_getAccel(acc,OUTPUT_SIGNED);
 						and so on...
 */
-void ADXL_getAccel(void *Data , uint8_t outputType)
-	{
+void ADXL_getAccel(void *Data , uint8_t outputType) {
 	uint8_t data[6]={0,0,0,0,0,0};
 	readRegister(DATA0,data,6);
 
-
-	if (outputType == OUTPUT_SIGNED)
-		{
+	if (outputType == OUTPUT_SIGNED) {
 		int16_t * acc = Data;
-	  // Two's Complement
-	  acc[0] = (int16_t) ((data[1]*256+data[0]));
-	  acc[1] = (int16_t) ((data[3]*256+data[2]));
-	  acc[2] = (int16_t) ((data[5]*256+data[4]));
-	  }
-	else if (outputType == OUTPUT_FLOAT)
-						{
-						float * fdata = Data;
-						fdata[0] = ( (int16_t) ((data[1]*256+data[0])))*GAINX;
-						fdata[1] = ( (int16_t) ((data[3]*256+data[2])))*GAINY;
-						fdata[2] = ( (int16_t) ((data[5]*256+data[4])))*GAINZ;
-
-						}
+	  	// Two's Complement
+	  	acc[0] = (int16_t) ((data[1]*256+data[0]));
+	  	acc[1] = (int16_t) ((data[3]*256+data[2]));
+	  	acc[2] = (int16_t) ((data[5]*256+data[4]));
 	}
+	else if (outputType == OUTPUT_FLOAT) {
+		float * fdata = Data;
+		fdata[0] = ( (int16_t) ((data[1]*256+data[0])))*GAINX;
+		fdata[1] = ( (int16_t) ((data[3]*256+data[2])))*GAINY;
+		fdata[2] = ( (int16_t) ((data[5]*256+data[4])))*GAINZ;
+
+	}
+}
 
 
 /** Starts Measure Mode
 * @param: s = ON or OFF
 */
-void ADXL_Measure(Switch s)
-		{
-			uint8_t reg;
-			readRegister(POWER_CTL,&reg,1);
-			switch (s) {
-				case ON:
-				reg &= ~(1<<2);
-				reg |= (1<<3);
-				writeRegister(POWER_CTL,reg);
-				break;
-				case OFF:
-				reg &= ~(1<<3);
-				writeRegister(POWER_CTL,reg);
-				break;
-				}
-		}
+void ADXL_Measure(Switch s)	{
+	uint8_t reg;
+	readRegister(POWER_CTL,&reg,1);
+	switch (s) {
+		case ON:
+			reg &= ~(1<<2);
+			reg |= (1<<3);
+			writeRegister(POWER_CTL,reg);
+			break;
+		case OFF:
+			reg &= ~(1<<3);
+			writeRegister(POWER_CTL,reg);
+			break;
+	}
+}
 
 /** Starts Sleep Mode
 * @param: s 		=  ON or OFF
@@ -284,46 +278,44 @@ void ADXL_Measure(Switch s)
 									 SLEEP_RATE_4HZ
 									 SLEEP_RATE_8HZ
 */
-void ADXL_Sleep(Switch s,uint8_t rate)
-		{
-			uint8_t reg;
-			readRegister(POWER_CTL,&reg,1);
-			switch (s) {
-				case ON:
-				reg |= (1<<2);
-				reg &= ~(1<<3);
-				reg += rate;
-				writeRegister(POWER_CTL,reg);
-				break;
-				case OFF:
-				reg &= ~(1<<2);
-				writeRegister(POWER_CTL,reg);
-				break;
-				}
+void ADXL_Sleep(Switch s,uint8_t rate) 	{
+	uint8_t reg;
+	readRegister(POWER_CTL,&reg,1);
+	switch (s) {
+		case ON:
+			reg |= (1<<2);
+			reg &= ~(1<<3);
+			reg += rate;
+			writeRegister(POWER_CTL,reg);
+			break;
+		case OFF:
+			reg &= ~(1<<2);
+			writeRegister(POWER_CTL,reg);
+			break;
+	}
 
-		}
+}
 
 /** Starts Standby Mode
 * @param: s = ON or OFF
 		OFF: Takes the module into sleep mode.
 */
-void ADXL_Standby(Switch s)
-		{
-			uint8_t reg;
-			readRegister(POWER_CTL,&reg,1);
-			switch (s) {
-				case ON:
-				reg &= ~(1<<2);
-				reg &= ~(1<<3);
-				writeRegister(POWER_CTL,reg);
-				break;
-				case OFF:
-				reg |= (1<<2);
-				writeRegister(POWER_CTL,reg);
-				break;
-				}
+void ADXL_Standby(Switch s) {
+	uint8_t reg;
+	readRegister(POWER_CTL,&reg,1);
+	switch (s) {
+		case ON:
+			reg &= ~(1<<2);
+			reg &= ~(1<<3);
+			writeRegister(POWER_CTL,reg);
+			break;
+		case OFF:
+			reg |= (1<<2);
+			writeRegister(POWER_CTL,reg);
+			break;
+	}
 
-		}
+}
 
 
 
@@ -332,36 +324,32 @@ regs[0] = BW_RATE
 regs[1] = DATA_FORMAT
 regs[2] = POWER_CTL
 */
-void ADXL_test(uint8_t * regs)
-		{
-			readRegister(BW_RATE,&regs[0],1);
-			readRegister(DATA_FORMAT,&regs[1],1);
-			readRegister(POWER_CTL,&regs[2],1);
-
-		}
+void ADXL_test(uint8_t * regs) {
+	readRegister(BW_RATE,&regs[0],1);
+	readRegister(DATA_FORMAT,&regs[1],1);
+	readRegister(POWER_CTL,&regs[2],1);
+}
 
 		 /**
  Enables the self Test mode
  */
-void ADXL_enableSelfTest(void)
-			{
-			uint8_t formatreg=0;
-			writeRegister(DATA_FORMAT,formatreg);
-			formatreg |= (1<<7);
-			writeRegister(DATA_FORMAT,formatreg);
-			}
+void ADXL_enableSelfTest(void) {
+	uint8_t formatreg=0;
+	writeRegister(DATA_FORMAT,formatreg);
+	formatreg |= (1<<7);
+	writeRegister(DATA_FORMAT,formatreg);
+}
 
 
  /**
  Disables the self Test mode
  */
-void ADXL_disableSelfTest(void)
-			{
-			uint8_t formatreg=0;
-			writeRegister(DATA_FORMAT,formatreg);
-			formatreg &= ~(1<<7);
-			writeRegister(DATA_FORMAT,formatreg);
-				}
+void ADXL_disableSelfTest(void) {
+	uint8_t formatreg=0;
+	writeRegister(DATA_FORMAT,formatreg);
+	formatreg &= ~(1<<7);
+	writeRegister(DATA_FORMAT,formatreg);
+}
 
 
 /**
@@ -370,12 +358,11 @@ void ADXL_disableSelfTest(void)
 					with a scale factor of 15.6 mg/LSB (that is, 0x7F = +2 g).
 
 */
-void ADXL_SetOffset(int8_t off_x,int8_t off_y,int8_t off_z)
-			{
-			writeRegister(OFFX,(uint8_t) off_x );
-			writeRegister(OFFY,(uint8_t) off_y );
-			writeRegister(OFFZ,(uint8_t) off_z );
-			}
+void ADXL_SetOffset(int8_t off_x,int8_t off_y,int8_t off_z) {
+	writeRegister(OFFX,(uint8_t) off_x );
+	writeRegister(OFFY,(uint8_t) off_y );
+	writeRegister(OFFZ,(uint8_t) off_z );
+}
 
 
 
@@ -389,9 +376,7 @@ void ADXL_SetOffset(int8_t off_x,int8_t off_y,int8_t off_z)
 * @param Threshold: The threshold value for tap interrupt. The scale factor is 62.5 mg/LSB. Should not be 0!
 */
 
-void ADXL_enableSingleTap(ADXL_IntOutput out, uint8_t axes, uint8_t Duration, uint8_t Threshold)
-
-{
+void ADXL_enableSingleTap(ADXL_IntOutput out, uint8_t axes, uint8_t Duration, uint8_t Threshold) {
 	uint8_t reg=0;
 
 	writeRegister(DUR,Duration);
@@ -405,7 +390,10 @@ void ADXL_enableSingleTap(ADXL_IntOutput out, uint8_t axes, uint8_t Duration, ui
 
 	// Settings Int output
 	readRegister(INT_MAP,&reg,1);
-	if (out == INT1) reg &= ~(1<<6); else reg |= (1<<6);
+	if (out == INT1) 
+		reg &= ~(1<<6); 
+	else 
+		reg |= (1<<6);
 	writeRegister(INT_MAP,reg);
 
 	// Enabling the TAP interrupt
@@ -419,16 +407,12 @@ void ADXL_enableSingleTap(ADXL_IntOutput out, uint8_t axes, uint8_t Duration, ui
  The settings are preserved.
 */
 
-void ADXL_disableSingleTap(void)
-
-{
+void ADXL_disableSingleTap(void) {
 	uint8_t reg=0;
 	// Disabling the TAP interrupt
 	readRegister(INT_ENABLE,&reg,1);
 	reg &= ~(1<<6);
 	writeRegister(INT_ENABLE,reg);
-
-
 }
 
 /**  Enabling Double TAP Int.
@@ -440,9 +424,8 @@ void ADXL_disableSingleTap(void)
 * @param Windows:		The time interval between two Taps. Scale factor is : 1.25 ms/LSB.  Should not be 0!
 */
 
-void ADXL_enableDoubleTap(ADXL_IntOutput out, uint8_t axes, uint8_t Duration, uint8_t Threshold, uint8_t Latent, uint8_t Window)
-		{
-		uint8_t reg=0;
+void ADXL_enableDoubleTap(ADXL_IntOutput out, uint8_t axes, uint8_t Duration, uint8_t Threshold, uint8_t Latent, uint8_t Window) {
+	uint8_t reg=0;
 
 	writeRegister(DUR,Duration);
 	writeRegister(THRESH_TAP,Threshold);
@@ -457,29 +440,30 @@ void ADXL_enableDoubleTap(ADXL_IntOutput out, uint8_t axes, uint8_t Duration, ui
 
 	// Settings Int output
 	readRegister(INT_MAP,&reg,1);
-	if (out == INT1) reg &= ~(1<<5); else reg |= (1<<5);
+	if (out == INT1) 
+		reg &= ~(1<<5); 
+	else 
+		reg |= (1<<5);
 	writeRegister(INT_MAP,reg);
 
 	// Enabling the TAP interrupt
 	readRegister(INT_ENABLE,&reg,1);
 	reg |= (1<<5);
 	writeRegister(INT_ENABLE,reg);
-	 }
+}
 
 
 /** Disabling Double TAP Int.
  The settings are preserved.
 */
 
-void ADXL_disableDoubleTap(void)
-
-  {
+void ADXL_disableDoubleTap(void) {
 	uint8_t reg=0;
 	// Disabling the Double TAP interrupt
 	readRegister(INT_ENABLE,&reg,1);
 	reg &= ~(1<<5);
 	writeRegister(INT_ENABLE,reg);
-	}
+}
 
 /**  Enabling Activity Int.
 * @param out : 			ADXL has two Int. pins.
@@ -487,10 +471,8 @@ void ADXL_disableDoubleTap(void)
 * @param Threshold: The threshold value for activity interrupt. The scale factor is 62.5 mg/LSB. Should not be 0!
 */
 
-void ADXL_enableActivity(ADXL_IntOutput out, uint8_t axes, uint8_t Threshold, uint8_t AcDc)
-
-		{
-			uint8_t reg=0;
+void ADXL_enableActivity(ADXL_IntOutput out, uint8_t axes, uint8_t Threshold, uint8_t AcDc)	{
+	uint8_t reg=0;
 
 	writeRegister(THRESH_ACT,Threshold);
 
@@ -498,12 +480,18 @@ void ADXL_enableActivity(ADXL_IntOutput out, uint8_t axes, uint8_t Threshold, ui
 	//Setting the Axes
 	readRegister(ACT_INACT_CTL,&reg,1);
 	reg += (axes << 4);
-	if (AcDc == ACTIVITY_AC) reg |= (1<<7); else reg &= ~(1<<7);
-			writeRegister(TAP_AXES,reg);
+	if (AcDc == ACTIVITY_AC) 
+		reg |= (1<<7);
+	else 
+		reg &= ~(1<<7);
+	writeRegister(TAP_AXES,reg);
 
 	// Settings Int output
 	readRegister(INT_MAP,&reg,1);
-	if (out == INT1) reg &= ~(1<<4); else reg |= (1<<4);
+	if (out == INT1) 
+		reg &= ~(1<<4); 
+	else 
+		reg |= (1<<4);
 	writeRegister(INT_MAP,reg);
 
 	// Enabling the TAP interrupt
@@ -511,22 +499,20 @@ void ADXL_enableActivity(ADXL_IntOutput out, uint8_t axes, uint8_t Threshold, ui
 	reg |= (1<<4);
 	writeRegister(INT_ENABLE,reg);
 
-
-		}
+}
 
 
 /** Disabling Double TAP Int.
  The settings are preserved.
 */
 
-void ADXL_disableActivity(void)
-  {
+void ADXL_disableActivity(void) {
 	uint8_t reg=0;
 	// Disabling the Double TAP interrupt
 	readRegister(INT_ENABLE,&reg,1);
 	reg &= ~(1<<4);
 	writeRegister(INT_ENABLE,reg);
-	}
+}
 
 /**  Enables FreeFall Int.
 * @param out : 			ADXL has two Int. pins.
@@ -543,32 +529,33 @@ void ADXL_disableActivity(void)
 										recommended.
 					*/
 
-void ADXL_enableFreeFall(ADXL_IntOutput out, uint8_t Threshold, uint8_t Time)
-			{
-			uint8_t reg=0;
-			writeRegister(TIME_FF,Time);
-			writeRegister(THRESH_FF,Threshold);
-			// Settings Int output
-			readRegister(INT_MAP,&reg,1);
-			if (out == INT1) reg &= ~(1<<2); else reg |= (1<<2);
-			writeRegister(INT_MAP,reg);
+void ADXL_enableFreeFall(ADXL_IntOutput out, uint8_t Threshold, uint8_t Time) {
+	uint8_t reg=0;
+	writeRegister(TIME_FF,Time);
+	writeRegister(THRESH_FF,Threshold);
+	// Settings Int output
+	readRegister(INT_MAP,&reg,1);
+	if (out == INT1) 
+		reg &= ~(1<<2); 
+	else 
+		reg |= (1<<2);
+	writeRegister(INT_MAP,reg);
 
-			readRegister(INT_ENABLE,&reg,1);
-			reg |= (1<<2);
-			writeRegister(INT_ENABLE,reg);
-			}
+	readRegister(INT_ENABLE,&reg,1);
+	reg |= (1<<2);
+	writeRegister(INT_ENABLE,reg);
+}
 
 
 /** Disabling Double TAP Int.
  The settings are preserved.
 */
 
-void ADXL_disableFreeFall(void)
-{
-			uint8_t reg=0;
-			readRegister(INT_ENABLE,&reg,1);
-			reg %= ~(1<<2);
-			writeRegister(INT_ENABLE,reg);
+void ADXL_disableFreeFall(void) {
+	uint8_t reg=0;
+	readRegister(INT_ENABLE,&reg,1);
+	reg %= ~(1<<2);
+	writeRegister(INT_ENABLE,reg);
 
 }
 
@@ -577,11 +564,8 @@ void ADXL_disableFreeFall(void)
 * Put this function wherever you want to implement interrupt routines, e.g. EXTI_Callback
 */
 
-void ADXL_IntProto(void)
-
-{
-			uint8_t reg=0;
-			readRegister(INT_SOURCE,&reg,1);
-
+void ADXL_IntProto(void) {
+	uint8_t reg=0;
+	readRegister(INT_SOURCE,&reg,1);
 }
 
