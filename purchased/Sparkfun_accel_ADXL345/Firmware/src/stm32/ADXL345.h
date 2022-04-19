@@ -95,8 +95,8 @@ typedef enum {ON,OFF} Switch;
 #define BWRATE_200		11
 #define BWRATE_400		12
 
-#define INT_ACTIVEHIGH 0
-#define INT_ACTIVELOW  1
+#define INT_ACTIVEHIGH  0
+#define INT_ACTIVELOW   1
 
 #define RESOLUTION_FULL  1
 #define RESOLUTION_10BIT 0
@@ -134,7 +134,7 @@ typedef struct {
 	uint8_t Justify;
 	uint8_t AutoSleep;
 	uint8_t LinkMode;
-}ADXL_InitTypeDef;
+} ADXL_InitTypeDef;
 
 
 // Private functions
@@ -144,7 +144,7 @@ typedef struct {
 * @value  : 8-bit value of corresponding register
 * Since the register values to be written are 8-bit, there is no need to multiple writing
 */
-static void writeRegister(uint8_t address,uint8_t value);
+static void writeRegister (uint8_t address, uint8_t value);
 
 
 /** Reading ADXL Registers.
@@ -153,7 +153,7 @@ static void writeRegister(uint8_t address,uint8_t value);
 * @num		: number of bytes to be written
 */
 
-static void readRegister(uint8_t address,uint8_t * value, uint8_t num);
+static void readRegister (uint8_t address, uint8_t * value, uint8_t num);
 
 
 /**
@@ -192,7 +192,7 @@ Bandwidth Settings:
 
 		*/
 
-static void adxlBW(ADXL_InitTypeDef * adxl);
+static void adxlBW (ADXL_InitTypeDef * adxl);
 
 
 /**
@@ -220,7 +220,7 @@ static void adxlBW(ADXL_InitTypeDef * adxl);
 
 		*/
 
-static void adxlFormat(ADXL_InitTypeDef * adxl);
+static void adxlFormat (ADXL_InitTypeDef * adxl);
 
 
 
@@ -230,7 +230,7 @@ static void adxlFormat(ADXL_InitTypeDef * adxl);
 /** Initializes the ADXL unit
 	* @param adxl, structure of ADXL_InitTypeDef:
 */
-adxlStatus ADXL_Init(ADXL_InitTypeDef * adxl);
+adxlStatus ADXL_Init (ADXL_InitTypeDef * adxl);
 
 
 
@@ -244,12 +244,12 @@ adxlStatus ADXL_Init(ADXL_InitTypeDef * adxl);
 						      OUTPUT_FLOAT: float
 						if output is float, the GAIN(X-Y-Z) should be defined in definitions.
 */
-void ADXL_getAccel(void *Data,uint8_t outputType);
+void ADXL_getAccel (void *Data, uint8_t outputType);
 
 /** Starts Measure Mode
 * @param: s = ON or OFF
 */
-void ADXL_Measure(Switch s);
+void ADXL_Measure (Switch s);
 
 /** Starts Sleep Mode
 * @param: rate  =  SLEEP_RATE_1HZ
@@ -257,12 +257,12 @@ void ADXL_Measure(Switch s);
 				   SLEEP_RATE_4HZ
 				   SLEEP_RATE_8HZ
 */
-void ADXL_Sleep(Switch s,uint8_t rate);
+void ADXL_Sleep (Switch s, uint8_t rate);
 
 /** Starts Standby Mode
 * @param: s = ON or OFF
 */
-void ADXL_Standby(Switch s);
+void ADXL_Standby (Switch s);
 
 
 /** Reading Main Registers
@@ -270,7 +270,7 @@ regs[0] = BW_RATE
 regs[1] = DATA_FORMAT
 regs[2] = POWER_CTL
 */
-void ADXL_test(uint8_t * regs);
+void ADXL_test (uint8_t * regs);
 
  /**
  Enables the self Test mode
@@ -281,7 +281,7 @@ void ADXL_enableSelfTest(void);
  /**
  Disables the self Test mode
  */
-void ADXL_disableSelfTest(void);
+void ADXL_disableSelfTest (void);
 
 /**
  Setting the offsets for calibration
@@ -289,7 +289,7 @@ void ADXL_disableSelfTest(void);
 					with a scale factor of 15.6 mg/LSB (that is, 0x7F = +2 g).
 
 */
-void ADXL_SetOffset(int8_t off_x,int8_t off_y,int8_t off_z);
+void ADXL_SetOffset (int8_t off_x, int8_t off_y, int8_t off_z);
 
 
 
@@ -298,7 +298,10 @@ void ADXL_SetOffset(int8_t off_x,int8_t off_y,int8_t off_z);
 	///// Important Note: The interrupt routine in your code should be implemented using ADXL_IntProto()
 	///// function!
 
-typedef enum {INT1=0,INT2=1} ADXL_IntOutput;
+typedef enum {
+	INT1=0,
+	INT2=1
+} ADXL_IntOutput;
 #define X_axes 4
 #define Y_axes 2
 #define Z_axes 1
@@ -310,7 +313,7 @@ typedef enum {INT1=0,INT2=1} ADXL_IntOutput;
 * @param Threshold: The threshold value for tap interrupt. The scale factor is 62.5 mg/LSB. Should not be 0!
 */
 
-void ADXL_enableSingleTap(ADXL_IntOutput out, uint8_t axes, uint8_t Duration, uint8_t Threshold);
+void ADXL_enableSingleTap (ADXL_IntOutput out, uint8_t axes, uint8_t Duration, uint8_t Threshold);
 
 
 /** Disabling TAP Int.
@@ -328,7 +331,7 @@ void ADXL_disableSingleTap(void);
 * @param Windows:		The time interval between two Taps. Scale factor is : 1.25 ms/LSB.  Should not be 0!
 */
 
-void ADXL_enableDoubleTap(ADXL_IntOutput out, uint8_t axes, uint8_t Duration, uint8_t Threshold, uint8_t Latent, uint8_t Window);
+void ADXL_enableDoubleTap (ADXL_IntOutput out, uint8_t axes, uint8_t Duration, uint8_t Threshold, uint8_t Latent, uint8_t Window);
 
 
 /** Disabling Double TAP Int.
@@ -349,7 +352,7 @@ void ADXL_disableDoubleTap(void);
 * @param Threshold: The threshold value for activity interrupt. The scale factor is 62.5 mg/LSB. Should not be 0!
 */
 
-void ADXL_enableActivity(ADXL_IntOutput out, uint8_t axes, uint8_t Threshold, uint8_t AcDc);
+void ADXL_enableActivity (ADXL_IntOutput out, uint8_t axes, uint8_t Threshold, uint8_t AcDc);
 
 
 /** Disabling Double TAP Int.
@@ -373,14 +376,14 @@ void ADXL_disableActivity(void);
 										recommended.
 					*/
 
-void ADXL_enableFreeFall(ADXL_IntOutput out, uint8_t Threshold, uint8_t Time);
+void ADXL_enableFreeFall (ADXL_IntOutput out, uint8_t Threshold, uint8_t Time);
 
 
 /** Disabling Double TAP Int.
  The settings are preserved.
 */
 
-void ADXL_disableFreeFall(void);
+void ADXL_disableFreeFall (void);
 
 
 /** Interrupt prototype
@@ -388,4 +391,4 @@ void ADXL_disableFreeFall(void);
 * Put this function wherever you want to implement interrupt routines, e.g. EXTI_Callback
 */
 
-void ADXL_IntProto(void);
+void ADXL_IntProto (void);
