@@ -1,0 +1,335 @@
+EESchema Schematic File Version 4
+LIBS:MC34063_NegativeRegulator-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Breadboard MC34063-based Inverting Regulator"
+Date "2018-06-17"
+Rev "A"
+Comp ""
+Comment1 "Generates a regulated voltage output in opposite polarity to the input voltage"
+Comment2 "Selectable Voltages: 3.3V, 5V, 9V, 15V"
+Comment3 "Max Current: 300mA"
+Comment4 ""
+$EndDescr
+$Comp
+L mc34063:MC34063 U_REG1
+U 1 1 5B26D1A3
+P 6825 3100
+F 0 "U_REG1" H 6825 3475 60  0000 C CNN
+F 1 "MC34063" H 6825 2700 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6625 3100 60  0001 C CNN
+F 3 "" H 6625 3100 60  0001 C CNN
+	1    6825 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP COUT1
+U 1 1 5B26D266
+P 8150 4300
+F 0 "COUT1" H 8225 4200 50  0000 L CNN
+F 1 "100uF" H 8250 4425 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.8" H 8188 4150 50  0001 C CNN
+F 3 "" H 8150 4300 50  0001 C CNN
+	1    8150 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:L_Core_Iron L1
+U 1 1 5B26D2FA
+P 8500 2950
+F 0 "L1" V 8450 2950 50  0000 C CNN
+F 1 "100uH" V 8610 2950 50  0000 C CNN
+F 2 "Inductors_SMD:L_12x12mm_h8mm" H 8500 2950 50  0001 C CNN
+F 3 "" H 8500 2950 50  0001 C CNN
+	1    8500 2950
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 5B26D32C
+P 8150 3550
+F 0 "D1" V 8125 3300 50  0000 C CNN
+F 1 "1N5819" V 8200 3325 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 8150 3550 50  0001 C CNN
+F 3 "" H 8150 3550 50  0001 C CNN
+	1    8150 3550
+	0    -1   1    0   
+$EndComp
+Text Label 8800 3300 1    60   ~ 0
+GND
+$Comp
+L Device:CP CIN1
+U 1 1 5B26DA41
+P 3075 3750
+F 0 "CIN1" H 3100 3850 50  0000 L CNN
+F 1 "100uF" H 3100 3650 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.8" H 3113 3600 50  0001 C CNN
+F 3 "" H 3075 3750 50  0001 C CNN
+	1    3075 3750
+	-1   0    0    -1  
+$EndComp
+Text Label 3075 4800 1    60   ~ 0
+GND
+Text Label 8150 4650 1    60   ~ 0
+GND
+$Comp
+L MC34063_NegativeRegulator-rescue:Conn_01x02 J_IN1
+U 1 1 5B26FC88
+P 1850 3250
+F 0 "J_IN1" H 1850 3350 50  0000 C CNN
+F 1 "Conn_01x02" H 1850 3050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1850 3250 50  0001 C CNN
+F 3 "" H 1850 3250 50  0001 C CNN
+	1    1850 3250
+	-1   0    0    -1  
+$EndComp
+Text Label 2300 3650 1    60   ~ 0
+GND
+$Comp
+L Device:R RDV1
+U 1 1 5B27085E
+P 6850 4050
+F 0 "RDV1" V 6930 4050 50  0000 C CNN
+F 1 "10K" V 6850 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6780 4050 50  0001 C CNN
+F 3 "" H 6850 4050 50  0001 C CNN
+	1    6850 4050
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R_VOUT2
+U 1 1 5B270D97
+P 4475 4250
+F 0 "R_VOUT2" V 4555 4250 50  0000 C CNN
+F 1 "30K" V 4475 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4405 4250 50  0001 C CNN
+F 3 "" H 4475 4250 50  0001 C CNN
+	1    4475 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R_VOUT3
+U 1 1 5B270E4C
+P 4200 4250
+F 0 "R_VOUT3" V 4280 4250 50  0000 C CNN
+F 1 "60K" V 4200 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 4250 50  0001 C CNN
+F 3 "" H 4200 4250 50  0001 C CNN
+	1    4200 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R_VOUT5
+U 1 1 5B2712C8
+P 3675 4250
+F 0 "R_VOUT5" V 3755 4250 50  0000 C CNN
+F 1 "112K" V 3675 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3605 4250 50  0001 C CNN
+F 3 "" H 3675 4250 50  0001 C CNN
+	1    3675 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R_VOUT1
+U 1 1 5B2728C1
+P 4750 4250
+F 0 "R_VOUT1" V 4830 4250 50  0000 C CNN
+F 1 "16K" V 4750 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4680 4250 50  0001 C CNN
+F 3 "" H 4750 4250 50  0001 C CNN
+	1    4750 4250
+	-1   0    0    -1  
+$EndComp
+Text Notes 3325 4700 0    60   ~ 0
+18V  15V  12V   9V   5V   3.3V\n
+Text Label 8650 4775 0    60   ~ 0
+GND
+Text Label 8450 4050 0    60   ~ 0
+VNEG
+$Comp
+L MC34063_NegativeRegulator-rescue:Conn_01x02 JOUT1
+U 1 1 5B2E7A23
+P 8950 4050
+F 0 "JOUT1" H 8950 4150 50  0000 C CNN
+F 1 "Conn_01x02" H 8950 3850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8950 4050 50  0001 C CNN
+F 3 "" H 8950 4050 50  0001 C CNN
+	1    8950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L sw_rotary4:SW_Rotary4 SW1
+U 1 1 5B2E851A
+P 5200 3850
+F 0 "SW1" H 5200 4300 50  0000 C CNN
+F 1 "SW_Rotary4" H 5200 3400 50  0000 C CNN
+F 2 "RotarySW_CTS_SERIES_220AD_04_THT_4Position:RotarySW_CTS_SERIES_220AD_04_SMT_4Position" H 5000 4550 50  0001 C CNN
+F 3 "" H 5000 4550 50  0001 C CNN
+	1    5200 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7275 2650 7300 2650
+Wire Wire Line
+	7300 2650 7300 2375
+Wire Wire Line
+	7300 2375 6275 2375
+Wire Wire Line
+	6275 2375 6275 2650
+Wire Wire Line
+	6275 2650 6375 2650
+Wire Wire Line
+	7275 2950 8150 2950
+Wire Wire Line
+	8150 3400 8150 2950
+Connection ~ 8150 2950
+Wire Wire Line
+	7350 3250 7275 3250
+Wire Wire Line
+	7750 3550 7275 3550
+Wire Wire Line
+	8150 3700 8150 4050
+Wire Wire Line
+	7750 3250 7750 3550
+Wire Wire Line
+	7000 4050 7750 4050
+Wire Wire Line
+	8650 2950 8800 2950
+Wire Wire Line
+	8800 2950 8800 3300
+Wire Wire Line
+	4600 2950 6275 2950
+Wire Wire Line
+	2050 3250 3075 3250
+Wire Wire Line
+	3075 3900 3075 4525
+Connection ~ 7750 4050
+Wire Wire Line
+	7750 3250 7650 3250
+Connection ~ 7750 3550
+Connection ~ 8150 4050
+Wire Wire Line
+	8150 4450 8150 4650
+Wire Wire Line
+	4300 2950 3075 2950
+Connection ~ 6275 2950
+Connection ~ 6275 2650
+Wire Wire Line
+	2050 3350 2300 3350
+Wire Wire Line
+	2300 3350 2300 3650
+Wire Wire Line
+	4475 3950 4475 4100
+Wire Wire Line
+	4800 3950 4475 3950
+Wire Wire Line
+	4475 4525 4475 4400
+Wire Wire Line
+	3075 4525 3675 4525
+Connection ~ 3075 4525
+Wire Wire Line
+	4200 4400 4200 4525
+Connection ~ 4200 4525
+Wire Wire Line
+	3675 4525 3675 4400
+Connection ~ 3675 4525
+Wire Wire Line
+	3675 3650 4800 3650
+Wire Wire Line
+	4750 4100 4750 4050
+Wire Wire Line
+	4750 4050 4800 4050
+Wire Wire Line
+	4750 4525 4750 4400
+Connection ~ 4475 4525
+Wire Wire Line
+	4200 3750 4800 3750
+Wire Wire Line
+	3075 2950 3075 3250
+Connection ~ 3075 3250
+Wire Wire Line
+	6300 3550 6375 3550
+Wire Wire Line
+	6300 4050 6700 4050
+Connection ~ 6300 3850
+Wire Wire Line
+	4200 3750 4200 4100
+Wire Wire Line
+	3675 3650 3675 4100
+$Comp
+L Device:R RDV2
+U 1 1 5B2E8F45
+P 6050 3850
+F 0 "RDV2" V 6130 3850 50  0000 C CNN
+F 1 "1K" V 6050 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 3850 50  0001 C CNN
+F 3 "" H 6050 3850 50  0001 C CNN
+	1    6050 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 3850 5900 3850
+Wire Wire Line
+	6200 3850 6300 3850
+Text Notes 7350 4425 0    60   ~ 0
+MUST BE REV \nPOLARITY!!!
+Wire Wire Line
+	8750 4150 8650 4150
+Wire Wire Line
+	8650 4150 8650 4775
+$Comp
+L Device:R RSC1
+U 1 1 5B2FC159
+P 4450 2950
+F 0 "RSC1" V 4530 2950 50  0000 C CNN
+F 1 "0.5R" V 4450 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4380 2950 50  0001 C CNN
+F 3 "" H 4450 2950 50  0001 C CNN
+	1    4450 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C CTimer1
+U 1 1 5B2FC691
+P 7500 3250
+F 0 "CTimer1" H 7525 3350 50  0000 L CNN
+F 1 "220pF" H 7525 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7538 3100 50  0001 C CNN
+F 3 "" H 7500 3250 50  0001 C CNN
+	1    7500 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 3550 6300 3850
+Wire Wire Line
+	8150 2950 8350 2950
+Wire Wire Line
+	7750 4050 8150 4050
+Wire Wire Line
+	7750 3550 7750 4050
+Wire Wire Line
+	8150 4050 8150 4150
+Wire Wire Line
+	8150 4050 8750 4050
+Wire Wire Line
+	6275 2950 6375 2950
+Wire Wire Line
+	6275 2650 6275 2950
+Wire Wire Line
+	3075 4525 3075 4800
+Wire Wire Line
+	4200 4525 4475 4525
+Wire Wire Line
+	3675 4525 4200 4525
+Wire Wire Line
+	4475 4525 4750 4525
+Wire Wire Line
+	3075 3250 6375 3250
+Wire Wire Line
+	3075 3250 3075 3600
+Wire Wire Line
+	6300 3850 6300 4050
+$EndSCHEMATC

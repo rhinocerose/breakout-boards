@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by CvPcb (25-Oct-2014 BZR 4029)-stable date = Tue 03 Feb 2015 19:48:07 CET
+
+BeginCmp
+TimeStamp = /54764164;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5476419B;
+Reference = C2;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /547641A1;
+Reference = C3;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /547641A7;
+Reference = C4;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /547647EE;
+Reference = C5;
+ValeurCmp = 20pF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /547647FB;
+Reference = C6;
+ValeurCmp = 20pF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54763FEC;
+Reference = P1;
+ValeurCmp = HEADER 1;
+IdModule  = pin_array_6x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54763FF9;
+Reference = P2;
+ValeurCmp = HEADER 2;
+IdModule  = pin_array_6x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54764005;
+Reference = P3;
+ValeurCmp = HEADER 4;
+IdModule  = pin_array_6x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54763FFF;
+Reference = P4;
+ValeurCmp = HEADER 3;
+IdModule  = pin_array_6x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54763FDD;
+Reference = U1;
+ValeurCmp = STM32L15X_QFN48;
+IdModule  = lqfp48;
+EndCmp
+
+BeginCmp
+TimeStamp = /547647A1;
+Reference = X1;
+ValeurCmp = HSE;
+IdModule  = HC-49V;
+EndCmp
+
+EndListe

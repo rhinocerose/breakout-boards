@@ -1,0 +1,22 @@
+To prepare an ubuntu system to compile the application:
+	sudo apt-get install git autogen automake g++ libftdi-dev
+
+To bootstrap the build system:
+
+	./autogen.sh
+
+This will generate the configure string and various autotools dependencies.
+Then, to compile a linux binary ("papilio-prog"):
+
+	./configure && make
+
+Or to generate a windows binary ("papilio-prog.exe"):
+
+	./configure --host=i686-w64-mingw32 --build=i686-linux && make
+
+That is assuming you have MinGW installed. On Debian and Ubuntu systems,
+"apt-get mingw64" should be all that's needed.
+
+The windows binary will still need the FTDI driver DLL installed on the
+system to work.
+

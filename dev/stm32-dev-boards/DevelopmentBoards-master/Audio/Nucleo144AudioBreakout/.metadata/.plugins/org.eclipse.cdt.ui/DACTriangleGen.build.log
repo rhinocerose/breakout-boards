@@ -1,0 +1,18 @@
+17:46:15 **** Incremental Build of configuration Debug for project DACTriangleGen ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-d16 -std=gnu11 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F767xx -I../Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g3 -fstack-usage -Wall -specs=nano.specs -o Src\main.o ..\Src\main.c 
+arm-atollic-eabi-gcc -o DACTriangleGen.elf Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_adc.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_adc_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cortex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dac.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dac_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_gpio.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2c.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2c_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim_ex.o Src\adc.o Src\dac.o Src\dma.o Src\gpio.o Src\main.o Src\stm32f7xx_hal_msp.o Src\stm32f7xx_it.o Src\system_stm32f7xx.o Src\tim.o Src\utils.o startup\startup_stm32f767xx.o -mthumb -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-d16 -T../STM32F767ZI_FLASH.ld -specs=nosys.specs -static -Wl,-Map=DACTriangleGen.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+H:\Programs\TrueSTUDIO for STM32 9.2.0\ide\jre\bin\java -jar H:\Programs\TrueSTUDIO for STM32 9.2.0\Tools\arm-atollic-reports.jar sizeinfo list DACTriangleGen.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+  15496	    120	   2444	  18060	   468c	DACTriangleGen.elf
+Print size information done
+Generate listing file
+Output sent to: DACTriangleGen.list
+Generate listing file done
+Generate build reports done
+arm-atollic-eabi-objcopy.exe -O ihex DACTriangleGen.elf DACTriangleGen.hex 
+
+17:46:17 Build Finished (took 1s.641ms)
+

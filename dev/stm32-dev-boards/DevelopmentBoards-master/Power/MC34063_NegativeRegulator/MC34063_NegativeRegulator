@@ -1,0 +1,29 @@
+Source,/Users/GB080220/workspace/circuits/MC34063_NegativeRegulator/MC34063_NegativeRegulator.sch
+Kicad Rev,Eeschema 4.0.7
+Generated Date,Monday, 25 June 2018 'amt' 00:00:56
+
+Title,Breadboard MC34063-based Inverting Regulator
+Company,Not Set
+Revision,A
+Date Issue,2018-06-17
+Comment,Generates a regulated voltage output in opposite polarity to the input voltage
+Comment,Selectable Voltages: 3.3V, 5V, 9V, 15V
+Comment,Max Current: 300mA
+
+Reference,Value,Library,Library Ref
+U_REG1,MC34063,mc34063,MC34063
+COUT1,100uF,device,CP
+L1,100uH,device,L_Core_Iron
+D1,1N5819,device,D_Schottky
+CIN1,100uF,device,CP
+J_IN1,Conn_01x02,conn,Conn_01x02
+RDV1,10K,device,R
+R_VOUT2,30K,device,R
+R_VOUT3,60K,device,R
+R_VOUT5,112K,device,R
+R_VOUT1,16K,device,R
+JOUT1,Conn_01x02,conn,Conn_01x02
+SW1,SW_Rotary4,sw_rotary4,SW_Rotary4
+RDV2,1K,device,R
+RSC1,0.5R,device,R
+CTimer1,220pF,device,C

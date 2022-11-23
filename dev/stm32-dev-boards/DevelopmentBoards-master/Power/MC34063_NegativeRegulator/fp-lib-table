@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name RotarySW_CTS_SERIES_220AD_04_THT_4Position)(type KiCad)(uri "$(KIPRJMOD)/lib/RotarySW_CTS_SERIES_220AD_04_THT_4Position.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,53 @@
+EESchema-DOCLIB  Version 2.0  Date: Sun 23 Nov 2014 22:06:38 CET
+#
+$CMP 79L05
+D Linear Regulator -5V
+K POWER REGUL
+F regulator\lm79lxx.pdf
+$ENDCMP
+#
+$CMP ESP8266V2
+D ESP8266 model 2
+K CONN
+$ENDCMP
+#
+$CMP IR_LED
+D IR Led
+K IR Led
+$ENDCMP
+#
+$CMP Lithi_LOGO
+D Logo
+K Logo
+$ENDCMP
+#
+$CMP LM7905
+D Linear Regulator -5V
+K POWER REGUL
+F regulator\lm79xx.pdf
+$ENDCMP
+#
+$CMP LM7912
+D Linear Regulator -12V
+K POWER REGUL
+F regulator\lm79xx.pdf
+$ENDCMP
+#
+$CMP MMBT2222
+D MMBT2222
+K NPN General Puprose Transistor SMD SOT23
+F https://www.fairchildsemi.com/datasheets/MM/MMBT2222.pdf
+$ENDCMP
+#
+$CMP MSP430G2302IPW14
+D MSP430G2302IPW14
+K MSP430
+$ENDCMP
+#
+$CMP XC6206P332MR
+D Linear Regulator -5V
+K POWER REGUL
+F regulator\lm79xx.pdf
+$ENDCMP
+#
+#End Doc Library

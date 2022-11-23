@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/GB080220/workspace/circuits/MC34063_NegativeRegulator/MC34063_NegativeRegulator.sch</source>
+    <date>Monday, 25 June 2018 'amt' 00:00:56</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Breadboard MC34063-based Inverting Regulator</title>
+        <company/>
+        <rev>A</rev>
+        <date>2018-06-17</date>
+        <source>MC34063_NegativeRegulator.sch</source>
+        <comment number="1" value="Generates a regulated voltage output in opposite polarity to the input voltage"/>
+        <comment number="2" value="Selectable Voltages: 3.3V, 5V, 9V, 15V"/>
+        <comment number="3" value="Max Current: 300mA"/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U_REG1">
+      <value>MC34063</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="mc34063" part="MC34063"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26D1A3</tstamp>
+    </comp>
+    <comp ref="COUT1">
+      <value>100uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_5x5.8</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26D266</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>100uH</value>
+      <footprint>Inductors_SMD:L_12x12mm_h8mm</footprint>
+      <libsource lib="device" part="L_Core_Iron"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26D2FA</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>1N5819</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26D32C</tstamp>
+    </comp>
+    <comp ref="CIN1">
+      <value>100uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_5x5.8</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26DA41</tstamp>
+    </comp>
+    <comp ref="J_IN1">
+      <value>Conn_01x02</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26FC88</tstamp>
+    </comp>
+    <comp ref="RDV1">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B27085E</tstamp>
+    </comp>
+    <comp ref="R_VOUT2">
+      <value>30K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B270D97</tstamp>
+    </comp>
+    <comp ref="R_VOUT3">
+      <value>60K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B270E4C</tstamp>
+    </comp>
+    <comp ref="R_VOUT5">
+      <value>112K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B2712C8</tstamp>
+    </comp>
+    <comp ref="R_VOUT1">
+      <value>16K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B2728C1</tstamp>
+    </comp>
+    <comp ref="JOUT1">
+      <value>Conn_01x02</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B2E7A23</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Rotary4</value>
+      <footprint>RotarySW_CTS_SERIES_220AD_04_THT_4Position:RotarySW_CTS_SERIES_220AD_04_SMT_4Position</footprint>
+      <libsource lib="sw_rotary4" part="SW_Rotary4"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B2E851A</tstamp>
+    </comp>
+    <comp ref="RDV2">
+      <value>1K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B2E8F45</tstamp>
+    </comp>
+    <comp ref="RSC1">
+      <value>0.5R</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B2FC159</tstamp>
+    </comp>
+    <comp ref="CTimer1">
+      <value>220pF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B2FC691</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="L_Core_Iron">
+      <description>Inductor with Iron Core</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Core_Iron</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="mc34063" part="MC34063">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MC34063</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sw_rotary4" part="SW_Rotary4">
+      <description>rotary switch with 4 positions</description>
+      <docs>http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Rotary4</field>
+      </fields>
+      <pins>
+        <pin num="0" name="0" type="passive"/>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="C" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="mc34063">
+      <uri>/Users/GB080220/workspace/circuits/MC34063_NegativeRegulator/lib/mc34063.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/Library/Application Support/kicad/library/device.lib</uri>
+    </library>
+    <library logical="sw_rotary4">
+      <uri>/Users/GB080220/workspace/circuits/MC34063_NegativeRegulator/lib/sw_rotary4.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(R_VOUT2-Pad1)">
+      <node ref="SW1" pin="1"/>
+      <node ref="R_VOUT2" pin="1"/>
+    </net>
+    <net code="2" name="/GND">
+      <node ref="J_IN1" pin="2"/>
+      <node ref="CIN1" pin="2"/>
+      <node ref="L1" pin="1"/>
+      <node ref="COUT1" pin="1"/>
+      <node ref="JOUT1" pin="2"/>
+      <node ref="R_VOUT1" pin="2"/>
+      <node ref="R_VOUT5" pin="2"/>
+      <node ref="R_VOUT3" pin="2"/>
+      <node ref="R_VOUT2" pin="2"/>
+    </net>
+    <net code="3" name="Net-(RDV1-Pad1)">
+      <node ref="RDV1" pin="1"/>
+      <node ref="RDV2" pin="1"/>
+      <node ref="U_REG1" pin="5"/>
+    </net>
+    <net code="4" name="Net-(RDV2-Pad2)">
+      <node ref="SW1" pin="4"/>
+      <node ref="RDV2" pin="2"/>
+    </net>
+    <net code="5" name="Net-(R_VOUT5-Pad1)">
+      <node ref="SW1" pin="3"/>
+      <node ref="R_VOUT5" pin="1"/>
+    </net>
+    <net code="6" name="Net-(R_VOUT3-Pad1)">
+      <node ref="SW1" pin="2"/>
+      <node ref="R_VOUT3" pin="1"/>
+    </net>
+    <net code="7" name="Net-(CIN1-Pad1)">
+      <node ref="U_REG1" pin="6"/>
+      <node ref="RSC1" pin="2"/>
+      <node ref="J_IN1" pin="1"/>
+      <node ref="CIN1" pin="1"/>
+    </net>
+    <net code="8" name="Net-(R_VOUT1-Pad1)">
+      <node ref="SW1" pin="0"/>
+      <node ref="R_VOUT1" pin="1"/>
+    </net>
+    <net code="9" name="Net-(RSC1-Pad1)">
+      <node ref="U_REG1" pin="1"/>
+      <node ref="U_REG1" pin="7"/>
+      <node ref="U_REG1" pin="8"/>
+      <node ref="RSC1" pin="1"/>
+    </net>
+    <net code="10" name="Net-(CTimer1-Pad2)">
+      <node ref="U_REG1" pin="3"/>
+      <node ref="CTimer1" pin="2"/>
+    </net>
+    <net code="11" name="Net-(D1-Pad1)">
+      <node ref="U_REG1" pin="2"/>
+      <node ref="L1" pin="2"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="12" name="/VNEG">
+      <node ref="CTimer1" pin="1"/>
+      <node ref="RDV1" pin="2"/>
+      <node ref="JOUT1" pin="1"/>
+      <node ref="D1" pin="2"/>
+      <node ref="COUT1" pin="2"/>
+      <node ref="U_REG1" pin="4"/>
+    </net>
+  </nets>
+</export>

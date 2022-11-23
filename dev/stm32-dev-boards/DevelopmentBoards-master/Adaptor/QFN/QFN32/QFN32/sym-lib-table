@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name DummyQFN)(type Legacy)(uri /Users/GB080220/workspace/circuits/DevelopmentBoards/Adaptor/QFN/lib/DummyQFN.lib)(options "")(descr ""))
+)

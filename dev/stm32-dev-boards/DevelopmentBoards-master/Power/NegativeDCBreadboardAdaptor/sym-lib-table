@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name NegativeDCBreadboardAdaptor-rescue)(type Legacy)(uri ${KIPRJMOD}/NegativeDCBreadboardAdaptor-rescue.lib)(options "")(descr ""))
+  (lib (name _tc7662b)(type Legacy)(uri ${KIPRJMOD}/lib/_tc7662b.lib)(options "")(descr ""))
+)

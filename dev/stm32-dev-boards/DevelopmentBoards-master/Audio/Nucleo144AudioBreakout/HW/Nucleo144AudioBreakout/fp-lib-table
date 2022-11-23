@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Neutric_NMJ4HFD2_Horizontal)(type KiCad)(uri ${KIPRJMOD}/lib/Neutric_NMJ4HFD2_Horizontal.pretty)(options "")(descr ""))
+  (lib (name Neutric_NMJ6HFD4_Horizontal)(type KiCad)(uri ${KIPRJMOD}/lib/Neutric_NMJ6HFD4_Horizontal.pretty)(options "")(descr ""))
+)

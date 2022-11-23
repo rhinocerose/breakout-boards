@@ -1,0 +1,23 @@
+This file contains the hardware design files for the LeafLabs Maple.
+
+The design files for Maple Rev 1 live in maple-r1.  Similarly, Revs 3
+and 5 respectively live in maple-r3 and maple-r5.
+
+Rev 5 has not seen any electrical changes since its first release, but
+we've changed it silkscreen in order to fix a couple of mistakes since
+its first release.
+
+Looking for something else?
+
+* The source code for the libmaple library used for LeafLabs devices
+  is available at https://github.com/leaflabs/libmaple
+
+* The source code for the Maple IDE used to develop for LeafLabs
+  devices is available at https://github.com/leaflabs/maple-ide
+
+* The hardware design files for other LeafLabs boards are also
+  available in separate repositories:
+
+      https://github.com/leaflabs/maplemini
+      https://github.com/leaflabs/maplenative
+      https://github.com/leaflabs/oak

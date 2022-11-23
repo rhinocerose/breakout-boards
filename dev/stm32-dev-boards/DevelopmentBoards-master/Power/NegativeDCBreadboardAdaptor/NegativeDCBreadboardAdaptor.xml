@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/GB080220/workspace/circuits/NegativeDCBreadboardAdaptor/NegativeDCBreadboardAdaptor.sch</source>
+    <date>Saturday, 05 May 2018 'amt' 00:59:49</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>NegativeDCBreadboardAdaptor.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C_NEG1">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_4x5.3</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEB9CA7</tstamp>
+    </comp>
+    <comp ref="C_NEG2">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_4x5.3</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEB9CE5</tstamp>
+    </comp>
+    <comp ref="C_BP1">
+      <value>2.2uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_4x5.3</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEBA0C3</tstamp>
+    </comp>
+    <comp ref="U_NEGDC1">
+      <value>_TC7662B</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="_tc7662b" part="_TC7662B"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEBAD9E</tstamp>
+    </comp>
+    <comp ref="C_BP2">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:CP_Elec_4x5.3</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AECD463</tstamp>
+    </comp>
+    <comp ref="J_VINPOS1">
+      <value>Conn_01x01</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AECD94F</tstamp>
+    </comp>
+    <comp ref="J_VINGND1">
+      <value>Conn_01x01</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AECD9BD</tstamp>
+    </comp>
+    <comp ref="J_VOUTPOS1">
+      <value>Conn_01x01</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AECDB1B</tstamp>
+    </comp>
+    <comp ref="J_VOUTGND1">
+      <value>Conn_01x01</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AECDBE2</tstamp>
+    </comp>
+    <comp ref="J_VOUTNEG1">
+      <value>Conn_01x01</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AECDC24</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="_tc7662b" part="_TC7662B">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">_TC7662B</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BOOST" type="power_in"/>
+        <pin num="2" name="CAP+" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="CAP-" type="passive"/>
+        <pin num="5" name="VOUT" type="power_out"/>
+        <pin num="6" name="LV" type="passive"/>
+        <pin num="7" name="OSC" type="passive"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="_tc7662b">
+      <uri>/Users/GB080220/workspace/circuits/NegativeDCBreadboardAdaptor/lib/_tc7662b.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/Library/Application Support/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C_BP1-Pad1)">
+      <node ref="C_BP1" pin="1"/>
+      <node ref="U_NEGDC1" pin="1"/>
+      <node ref="U_NEGDC1" pin="8"/>
+      <node ref="C_BP2" pin="1"/>
+      <node ref="J_VINPOS1" pin="1"/>
+      <node ref="J_VOUTPOS1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(U_NEGDC1-Pad7)">
+      <node ref="U_NEGDC1" pin="7"/>
+    </net>
+    <net code="3" name="Net-(C_NEG1-Pad1)">
+      <node ref="C_NEG1" pin="1"/>
+      <node ref="U_NEGDC1" pin="2"/>
+    </net>
+    <net code="4" name="/GND">
+      <node ref="C_BP1" pin="2"/>
+      <node ref="U_NEGDC1" pin="3"/>
+      <node ref="U_NEGDC1" pin="6"/>
+      <node ref="J_VOUTGND1" pin="1"/>
+      <node ref="C_BP2" pin="2"/>
+      <node ref="J_VINGND1" pin="1"/>
+      <node ref="C_NEG2" pin="1"/>
+    </net>
+    <net code="5" name="Net-(C_NEG1-Pad2)">
+      <node ref="U_NEGDC1" pin="4"/>
+      <node ref="C_NEG1" pin="2"/>
+    </net>
+    <net code="6" name="Net-(C_NEG2-Pad2)">
+      <node ref="U_NEGDC1" pin="5"/>
+      <node ref="J_VOUTNEG1" pin="1"/>
+      <node ref="C_NEG2" pin="2"/>
+    </net>
+  </nets>
+</export>

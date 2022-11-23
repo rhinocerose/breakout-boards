@@ -1,0 +1,548 @@
+EESchema Schematic File Version 4
+LIBS:WsonBagelBoard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "The BinaryBagelBoard"
+Date "2018-12-29"
+Rev "RevA"
+Comp ""
+Comment1 "Input: 9VDC single supply. "
+Comment2 "Output: +/-5V @ 100mA (max)"
+Comment3 "A regulated PSU bread board adaptor for FX pedal dev"
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J_OUT1
+U 1 1 5C26CE74
+P 10200 2400
+F 0 "J_OUT1" H 10280 2442 50  0000 L CNN
+F 1 "Conn_01x03" H 10280 2351 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10200 2400 50  0001 C CNN
+F 3 "~" H 10200 2400 50  0001 C CNN
+	1    10200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J_IN2
+U 1 1 5C26D0F0
+P 950 2000
+F 0 "J_IN2" H 870 2217 50  0000 C CNN
+F 1 "Conn_01x02" H 870 2126 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 950 2000 50  0001 C CNN
+F 3 "~" H 950 2000 50  0001 C CNN
+	1    950  2000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2100 1400 2100
+Wire Wire Line
+	1400 2100 1400 2300
+Text Label 1400 2300 1    50   ~ 0
+GND
+Text Label 9800 2950 1    50   ~ 0
+GND
+Wire Wire Line
+	9800 2950 9800 2500
+Wire Wire Line
+	9800 2500 10000 2500
+Wire Wire Line
+	10000 2400 9600 2400
+Wire Wire Line
+	10000 2300 9600 2300
+Text Label 9600 2300 0    50   ~ 0
+OUTREG+
+Text Label 9600 2400 0    50   ~ 0
+OUTREG-
+$Comp
+L Connector_Generic:Conn_01x08 J_MNT1
+U 1 1 5C2987BB
+P 7800 5100
+F 0 "J_MNT1" H 7880 5092 50  0000 L CNN
+F 1 "Conn_01x08" H 7880 5001 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7800 5100 50  0001 C CNN
+F 3 "~" H 7800 5100 50  0001 C CNN
+	1    7800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J_MNT2
+U 1 1 5C2987F7
+P 8800 5100
+F 0 "J_MNT2" H 8880 5092 50  0000 L CNN
+F 1 "Conn_01x08" H 8880 5001 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 8800 5100 50  0001 C CNN
+F 3 "~" H 8800 5100 50  0001 C CNN
+	1    8800 5100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8600 4800
+NoConn ~ 8600 4900
+NoConn ~ 8600 5000
+NoConn ~ 8600 5100
+NoConn ~ 8600 5200
+NoConn ~ 8600 5300
+NoConn ~ 8600 5400
+NoConn ~ 8600 5500
+NoConn ~ 7600 5500
+NoConn ~ 7600 5400
+NoConn ~ 7600 5300
+NoConn ~ 7600 5200
+NoConn ~ 7600 5100
+NoConn ~ 7600 5000
+NoConn ~ 7600 4900
+NoConn ~ 7600 4800
+$Comp
+L Device:D_Schottky DP1
+U 1 1 5C28AAA5
+P 2250 2000
+F 0 "DP1" H 2250 1784 50  0000 C CNN
+F 1 "D_Schottky" H 2250 1875 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 2250 2000 50  0001 C CNN
+F 3 "~" H 2250 2000 50  0001 C CNN
+F 4 "BAT60AE6327HTSA1" H 2250 2000 50  0001 C CNN "MouserNo"
+F 5 "ForwardCurrent > 250mA" H 2250 2000 50  0001 C CNN "Type"
+	1    2250 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Regulator_SwitchedCapacitor:LM27762 U2
+U 1 1 5C79B1C4
+P 6100 2200
+F 0 "U2" H 6150 2667 50  0000 C CNN
+F 1 "LM27762" H 6150 2576 50  0000 C CNN
+F 2 "Package_SON:WSON-12-1EP_3x2mm_P0.5mm_EP1x2.65_ThermalVias" H 6250 1450 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm27762.pdf" H 8600 1800 50  0001 C CNN
+F 4 "595-LM27762DSSR" H 6100 2200 50  0001 C CNN "MouserNo"
+	1    6100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:uA7805 U1
+U 1 1 5C79B2A3
+P 3500 2000
+F 0 "U1" H 3500 2242 50  0000 C CNN
+F 1 "UA78M05CDCYR" H 3500 2151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3525 1850 50  0001 L CIN
+F 3 " UA78M05CDCYR Datasheet" H 3500 1950 50  0001 C CNN
+F 4 "595-UA78M05CDCYR" H 3500 2000 50  0001 C CNN "MouserNo"
+	1    3500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2000 3000 2000
+Wire Wire Line
+	3800 2000 4000 2000
+$Comp
+L Device:C C1
+U 1 1 5C79BD24
+P 5500 2800
+F 0 "C1" V 5650 2800 50  0000 C CNN
+F 1 "1u" V 5750 2800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5538 2650 50  0001 C CNN
+F 3 "~" H 5500 2800 50  0001 C CNN
+F 4 "CC0402KRX5R6BB105" H 5500 2800 50  0001 C CNN "MouserNo"
+	1    5500 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 2800 5300 2800
+Wire Wire Line
+	5300 2800 5300 2600
+Wire Wire Line
+	5300 2600 5700 2600
+$Comp
+L Device:C CP1
+U 1 1 5C79C0FA
+P 6800 3150
+F 0 "CP1" H 6915 3196 50  0000 L CNN
+F 1 "4.7u" H 6915 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6838 3000 50  0001 C CNN
+F 3 "~" H 6800 3150 50  0001 C CNN
+F 4 "GRM155R61A475MEAAD" H 6800 3150 50  0001 C CNN "MouserNo"
+	1    6800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2800 6800 2800
+Wire Wire Line
+	6800 2800 6800 3000
+Wire Wire Line
+	6800 3300 6800 3500
+Text Label 6800 3500 1    50   ~ 0
+GND
+$Comp
+L Device:R R3
+U 1 1 5C79C60C
+P 7450 2600
+F 0 "R3" V 7450 2600 50  0000 C CNN
+F 1 "150K" V 7550 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7380 2600 50  0001 C CNN
+F 3 "~" H 7450 2600 50  0001 C CNN
+F 4 "ERJ-U02D1503X" H 7450 2600 50  0001 C CNN "MouserNo"
+	1    7450 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 2400 7800 2600
+$Comp
+L Device:R R1
+U 1 1 5C79CBA7
+P 7450 2000
+F 0 "R1" V 7450 2000 50  0000 C CNN
+F 1 "150K" V 7350 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7380 2000 50  0001 C CNN
+F 3 "~" H 7450 2000 50  0001 C CNN
+F 4 "ERJ-U02D1503X" H 7450 2000 50  0001 C CNN "MouserNo"
+	1    7450 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 2200 7800 2000
+$Comp
+L Device:R R4
+U 1 1 5C79D48E
+P 8150 2400
+F 0 "R4" V 8150 2400 50  0000 C CNN
+F 1 "50K" V 8250 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8080 2400 50  0001 C CNN
+F 3 "~" H 8150 2400 50  0001 C CNN
+F 4 "AC0402FR-1347KL" H 8150 2400 50  0001 C CNN "MouserNo"
+	1    8150 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C79D543
+P 8150 2200
+F 0 "R2" V 8150 2200 50  0000 C CNN
+F 1 "50K" V 8050 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8080 2200 50  0001 C CNN
+F 3 "~" H 8150 2200 50  0001 C CNN
+F 4 "AC0402FR-1347KL" H 8150 2200 50  0001 C CNN "MouserNo"
+	1    8150 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 2400 8000 2400
+Wire Wire Line
+	7800 2200 8000 2200
+Wire Wire Line
+	8300 2200 8500 2200
+Wire Wire Line
+	8500 2200 8500 2400
+Wire Wire Line
+	8500 2400 8300 2400
+Wire Wire Line
+	8500 2400 8500 3500
+Connection ~ 8500 2400
+Text Label 8500 3500 1    50   ~ 0
+GND
+$Comp
+L Device:C CO+1
+U 1 1 5C79EDF8
+P 9000 3150
+F 0 "CO+1" H 9115 3196 50  0000 L CNN
+F 1 "2.2u" H 9115 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9038 3000 50  0001 C CNN
+F 3 "~" H 9000 3150 50  0001 C CNN
+F 4 "GRM155R61A225KE95D" H 9000 3150 50  0001 C CNN "MouserNo"
+	1    9000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2200 7800 2200
+Connection ~ 7800 2200
+Wire Wire Line
+	6600 2000 7150 2000
+Wire Wire Line
+	7600 2000 7800 2000
+Wire Wire Line
+	7150 2000 7150 1800
+Wire Wire Line
+	7150 1800 9000 1800
+Wire Wire Line
+	9000 1800 9000 3000
+Connection ~ 7150 2000
+Wire Wire Line
+	7150 2000 7300 2000
+Wire Wire Line
+	6600 2600 7150 2600
+Wire Wire Line
+	7600 2600 7800 2600
+Wire Wire Line
+	6600 2400 7800 2400
+Connection ~ 7800 2400
+$Comp
+L Device:C CO-1
+U 1 1 5C7A7B66
+P 7900 3150
+F 0 "CO-1" H 8015 3196 50  0000 L CNN
+F 1 "2.2u" H 8015 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7938 3000 50  0001 C CNN
+F 3 "~" H 7900 3150 50  0001 C CNN
+F 4 "GRM155R61A225KE95D" H 7900 3150 50  0001 C CNN "MouserNo"
+	1    7900 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3000 7900 2800
+Wire Wire Line
+	7900 2800 7150 2800
+Wire Wire Line
+	7150 2800 7150 2600
+Connection ~ 7150 2600
+Wire Wire Line
+	7150 2600 7300 2600
+Wire Wire Line
+	7900 3300 7900 3500
+Text Label 7900 3500 1    50   ~ 0
+GND
+Text Label 6750 2600 0    50   ~ 0
+OUTREG-
+Text Label 6750 2000 0    50   ~ 0
+OUTREG+
+Wire Wire Line
+	9000 3300 9000 3500
+Text Label 9000 3500 1    50   ~ 0
+GND
+Wire Wire Line
+	5650 2800 5700 2800
+Text Label 2750 2000 0    50   ~ 0
+9VIN
+Text Label 4250 2000 0    50   ~ 0
+5VREG
+$Comp
+L Device:C CR2
+U 1 1 5C7B43D0
+P 4000 2350
+F 0 "CR2" H 4115 2396 50  0000 L CNN
+F 1 "100n" H 4115 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 2200 50  0001 C CNN
+F 3 "~" H 4000 2350 50  0001 C CNN
+F 4 "885012105018" H 4000 2350 50  0001 C CNN "MouserNo"
+	1    4000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C CR1
+U 1 1 5C7B4413
+P 3000 2350
+F 0 "CR1" H 3115 2396 50  0000 L CNN
+F 1 "330n" H 3115 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3038 2200 50  0001 C CNN
+F 3 "~" H 3000 2350 50  0001 C CNN
+F 4 "GRT155R6YA474KE01D" H 3000 2350 50  0001 C CNN "MouserNo"
+	1    3000 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2200 3000 2000
+Connection ~ 3000 2000
+Wire Wire Line
+	3000 2000 3200 2000
+Wire Wire Line
+	4000 2200 4000 2000
+Connection ~ 4000 2000
+Wire Wire Line
+	4000 2000 4900 2000
+Wire Wire Line
+	4000 2500 4000 2700
+Wire Wire Line
+	4000 2700 3500 2700
+Wire Wire Line
+	3000 2700 3000 2500
+Wire Wire Line
+	3500 2300 3500 2700
+Text Label 3500 3000 1    50   ~ 0
+GND
+Connection ~ 3500 2700
+Wire Wire Line
+	3500 2700 3000 2700
+Wire Wire Line
+	3500 2700 3500 3000
+$Comp
+L Device:C CINV1
+U 1 1 5C7B8EAB
+P 4900 2350
+F 0 "CINV1" H 5015 2396 50  0000 L CNN
+F 1 "1u" H 5015 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4938 2200 50  0001 C CNN
+F 3 "~" H 4900 2350 50  0001 C CNN
+F 4 "CC0402KRX5R6BB105" H 4900 2350 50  0001 C CNN "MouserNo"
+	1    4900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2200 4900 2000
+Connection ~ 4900 2000
+Wire Wire Line
+	4900 2000 5700 2000
+Wire Wire Line
+	4900 2500 4900 3000
+Text Label 4900 3000 1    50   ~ 0
+GND
+Wire Wire Line
+	5350 2300 5700 2300
+Wire Wire Line
+	5350 2400 5700 2400
+Text Label 5350 2300 0    50   ~ 0
+EN-
+Text Label 5350 2400 0    50   ~ 0
+EN+
+Wire Wire Line
+	2700 4800 2850 4800
+Text Label 3800 4800 2    50   ~ 0
+EN-
+Wire Wire Line
+	2700 4900 3450 4900
+Text Label 3800 4900 2    50   ~ 0
+EN+
+$Comp
+L Switch:SW_DIP_x02 SWEN1
+U 1 1 5C7CE9CD
+P 2400 4900
+F 0 "SWEN1" H 2400 5267 50  0000 C CNN
+F 1 "SW_DIP_x02" H 2400 5176 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx02_Slide_Omron_A6H-2101_W6.15mm_P1.27mm" H 2400 4900 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/307/en-a6h-1221378.pdf" H 2400 4900 50  0001 C CNN
+F 4 "653-A6H-2101" H 2400 4900 50  0001 C CNN "MouserNo"
+	1    2400 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4800 2850 5100
+Connection ~ 2850 4800
+Wire Wire Line
+	2850 4800 3800 4800
+$Comp
+L Device:R REN-1
+U 1 1 5C7E0115
+P 2850 5250
+F 0 "REN-1" H 2920 5296 50  0000 L CNN
+F 1 "10K" H 2920 5205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2780 5250 50  0001 C CNN
+F 3 "~" H 2850 5250 50  0001 C CNN
+F 4 "SFR01MZPJ103" H 2850 5250 50  0001 C CNN "MouserNo"
+	1    2850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5400 2850 5550
+Text Label 2850 5550 1    50   ~ 0
+GND
+Wire Wire Line
+	3450 4900 3450 5200
+$Comp
+L Device:R REN+1
+U 1 1 5C7E1524
+P 3450 5350
+F 0 "REN+1" H 3520 5396 50  0000 L CNN
+F 1 "10K" H 3520 5305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3380 5350 50  0001 C CNN
+F 3 "~" H 3450 5350 50  0001 C CNN
+F 4 "SFR01MZPJ103" H 3450 5350 50  0001 C CNN "MouserNo"
+	1    3450 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 5500 3450 5650
+Text Label 3450 5650 1    50   ~ 0
+GND
+Connection ~ 3450 4900
+Wire Wire Line
+	3450 4900 3800 4900
+Wire Wire Line
+	2100 4800 1850 4800
+Wire Wire Line
+	1850 4800 1850 4450
+Text Label 1850 4450 0    50   ~ 0
+5VREG
+Wire Wire Line
+	1850 4800 1850 4900
+Wire Wire Line
+	1850 4900 2100 4900
+Connection ~ 1850 4800
+Wire Wire Line
+	6100 3000 6100 3250
+Wire Wire Line
+	6200 3000 6200 3250
+Wire Wire Line
+	6200 3250 6100 3250
+Connection ~ 6100 3250
+Wire Wire Line
+	6100 3250 6100 3600
+Text Label 6100 3600 1    50   ~ 0
+GND
+Wire Wire Line
+	5700 2200 5350 2200
+Text Label 5350 2200 0    50   ~ 0
+PGOOD
+$Comp
+L Device:LED DOK1
+U 1 1 5C7F0553
+P 5550 5000
+F 0 "DOK1" H 5542 4745 50  0000 C CNN
+F 1 "LED" H 5542 4836 50  0000 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5550 5000 50  0001 C CNN
+F 3 "~" H 5550 5000 50  0001 C CNN
+F 4 "150040RS73240" H 5550 5000 50  0001 C CNN "MouserNo"
+	1    5550 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R ROK1
+U 1 1 5C7F3C8D
+P 5050 5000
+F 0 "ROK1" V 5050 5000 50  0000 C CNN
+F 1 "10K" V 4934 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4980 5000 50  0001 C CNN
+F 3 "~" H 5050 5000 50  0001 C CNN
+F 4 "SFR01MZPJ103" H 5050 5000 50  0001 C CNN "MouserNo"
+	1    5050 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 5000 5400 5000
+Wire Wire Line
+	4900 5000 4700 5000
+Wire Wire Line
+	4700 5000 4700 4800
+Text Label 4700 4800 2    50   ~ 0
+5VREG
+Wire Wire Line
+	5700 5000 6250 5000
+Text Label 6250 5000 2    50   ~ 0
+PGOOD
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C7FBE20
+P 3000 1500
+F 0 "#FLG0101" H 3000 1575 50  0001 C CNN
+F 1 "PWR_FLAG" V 2950 1350 50  0000 C CNN
+F 2 "" H 3000 1500 50  0001 C CNN
+F 3 "~" H 3000 1500 50  0001 C CNN
+	1    3000 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1500 3000 2000
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C7FDF69
+P 1800 2100
+F 0 "#FLG0102" H 1800 2175 50  0001 C CNN
+F 1 "PWR_FLAG" V 1750 1750 50  0000 L CNN
+F 2 "" H 1800 2100 50  0001 C CNN
+F 3 "~" H 1800 2100 50  0001 C CNN
+	1    1800 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 2100 1400 2100
+Wire Wire Line
+	1150 2000 2100 2000
+Connection ~ 1400 2100
+$EndSCHEMATC

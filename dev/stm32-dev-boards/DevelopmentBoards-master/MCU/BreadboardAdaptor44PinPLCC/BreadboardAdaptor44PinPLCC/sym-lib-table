@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 44PinPLCCSocket)(type Legacy)(uri /Users/GB080220/workspace/circuits/BreadboardAdaptor44PinPLCC/BreadboardAdaptor44PinPLCC/lib/44PinPLCCSocket.lib)(options "")(descr ""))
+  (lib (name PLCCSockets)(type Legacy)(uri /Users/GB080220/workspace/circuits/BreadboardAdaptor44PinPLCC/BreadboardAdaptor44PinPLCC/lib/PLCCSockets.lib)(options "")(descr ""))
+)

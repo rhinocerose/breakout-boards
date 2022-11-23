@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name MC34063_NegativeRegulator-rescue)(type Legacy)(uri ${KIPRJMOD}/MC34063_NegativeRegulator-rescue.lib)(options "")(descr ""))
+  (lib (name mc34063)(type Legacy)(uri ${KIPRJMOD}/lib/mc34063.lib)(options "")(descr ""))
+  (lib (name sw_rotary4)(type Legacy)(uri ${KIPRJMOD}/lib/sw_rotary4.lib)(options "")(descr ""))
+)

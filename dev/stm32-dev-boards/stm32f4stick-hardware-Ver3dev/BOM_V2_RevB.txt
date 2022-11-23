@@ -1,0 +1,49 @@
+Partlist exported from /Users/furkan/workcenter/eagle/projects/STM32F4Stick/STM32F4Stick.sch at 7/10/14 2:12 AM
+
+Part   Value                   Device                   Package                  Description          
+-1     USB-MINIB-5PIN          USB-MINIB-5PIN           USB-MINIB                Mini-USB "B" connect 
+-2     STM32F405RG             STM32F405RG              TQFP64                   ARM DSP Chip used on 
+-3     M04X2                   M04X2                    2X4                      .1" header, two rows 
+C1     1.0uF                   1.0UF-16V-10%(0603)      0603-CAP                 CAP-00868            
+C2     0.1uF                   0.1UF-25V-5%(0603)       0603-CAP                 CAP-08604            
+C3     2.2uF                   CAP_POL1206              EIA3216                  Capacitor Polarized  
+C4     20pF                    12PF-50V-5%(0603)        0603-CAP                 CAP-09137            
+C5     2.2uF                   2.2UF-10V-20%(0603)      0603-CAP                 CAP-07888            
+C6     20pF                    12PF-50V-5%(0603)        0603-CAP                 CAP-09137            
+C7     0.1uF                   0.1UF-25V-5%(0603)       0603-CAP                 CAP-08604            
+C8     0.1uF                   0.1UF-25V-5%(0603)       0603-CAP                 CAP-08604            
+C9     0.1uF                   0.1UF-25V-5%(0603)       0603-CAP                 CAP-08604            
+C10    0.1uF                   0.1UF-25V-5%(0603)       0603-CAP                 CAP-08604            
+C11    0.1uF                   0.1UF-25V-5%(0603)       0603-CAP                 CAP-08604            
+C12    1.0uF                   1.0UF-16V-10%(0603)      0603-CAP                 CAP-00868            
+C13    0.1uF                   0.1UF-25V-5%(0603)       0603-CAP                 CAP-08604            
+C14    4.7uF                   CAP_POL1206              EIA3216                  Capacitor Polarized  
+C15    2.2uF                   2.2UF-10V-20%(0603)      0603-CAP                 CAP-07888            
+C16    0.1uF                   0.1UF-25V-5%(0603)       0603-CAP                 CAP-08604            
+C17    4.7uF                   4.7UF-6.3V-10%(0603)0603 0603-CAP                 CAP-08280            
+D1     GREEN                   LED-GREEN0603            LED-0603                 Various green LEDs   
+D2     BLUE                    LED-BLUE0603             LED-0603                 Blue LEDs for produc 
+D3     RED                     LED-RED0603              LED-0603                 Assorted Red LEDs    
+FRAME1 FRAME-LEDGER            FRAME-LEDGER             CREATIVE_COMMONS         Schematic Frame      
+JP1    M161X16_NO_SILK         M161X16_NO_SILK          1X16_NO_SILK             1x16 .1" header      
+JP2                            M031X03_NO_SILK          1X03_NO_SILK             Header 3             
+JP3                            M06NO_SILK               1X06_NO_SILK             Header 6             
+JP4    M021X02_NO_SILK         M021X02_NO_SILK          1X02_NO_SILK             Standard 2-pin 0.1"  
+LOGO1  OSHW-LOGOM              OSHW-LOGOM               OSHW-LOGO-M              Open Source Hardware 
+Q1                             XTAL-4-3225              NX3225                   Classic 4-pin 3.2 x  
+R1     22                      22OHM1/10W1%(0603)       0603-RES                 RES-08698            
+R2     22                      22OHM1/10W1%(0603)       0603-RES                 RES-08698            
+R3     1K                      1KOHM1/10W1%(0603)       0603-RES                 RES-07856            
+R4     100k                    100KOHM1/10W1%(0603)     0603-RES                 RES-07828            
+R5     100k                    100KOHM1/10W1%(0603)     0603-RES                 RES-07828            
+R6     100k                    100KOHM1/10W1%(0603)     0603-RES                 RES-07828            
+R7     100k                    100KOHM1/10W1%(0603)     0603-RES                 RES-07828            
+R8     10K                     10KOHM1/10W1%(0603)0603  0603-RES                 RES-00824            
+R9     10K                     10KOHM1/10W1%(0603)0603  0603-RES                 RES-00824            
+R10    1K                      1KOHM1/10W1%(0603)       0603-RES                 RES-07856            
+R11    1K                      1KOHM1/10W1%(0603)       0603-RES                 RES-07856            
+S1     SWITCH-MOMENTARY-2SMD-3 SWITCH-MOMENTARY-2SMD-3  TACTILE_SWITCH_SMD-3     Various NO switches- 
+S2     SWITCH-MOMENTARY-2SMD-3 SWITCH-MOMENTARY-2SMD-3  TACTILE_SWITCH_SMD-3     Various NO switches- 
+SJ1    JUMPER-PAD-2-NOYES_SILK JUMPER-PAD-2-NOYES_SILK  PAD-JUMPER-2-NO_YES_SILK                      
+U1     MIC5219 3.3V            V_REG_MIC52193.3V        SOT23-5                  V_REG MIC5219        
+U2     USD-SOCKETNEW           USD-SOCKETNEW            MICRO-SD-SOCKET-PP       microSD Socket       
